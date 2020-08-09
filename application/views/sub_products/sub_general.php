@@ -286,37 +286,50 @@
                                         <div class="insidevisit">15-55 mm 1/2″ to 2″</div>
                                         <div class="insidevisit" style="padding:0px;">                                            
                                             <div style="padding:0px;">
-                                                <div class="short-div3">Full</div>
+                                                <div class="short-div3" style="border-bottom: 1px solid grey;padding-bottom:82px;padding-top:82px">Full</div>
+                                                <div class="short-div3" style="border-bottom: 1px solid grey;padding-bottom:82px;padding-top:82px">Regular</div>
                                             </div>
                                             <!-- <div class="short-div3">Full</div>                    
                                             <div class="short-div3">Regular</div>
                                             <div class="short-div3" style="border-bottom:0px;">Full</div> -->
                                         </div> 
                                         <div class="insidevisit" style="padding:0px;">
-                                            <div class="short-div4">Screwed- BPS “II”</div>
-                                            <div class="short-div2">Screwed-NPT</div>
-                                            <div class="short-div4">Socketweld</div>
-                                            <div class="short-div2">SW with Pups</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid grey;">Screwed- BPS “II”</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid grey;">Screwed-NPT</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid grey;">Socketweld</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid grey;">SW with Pups</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid grey;">Screwed- BPS “II”</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid grey;">Screwed-NPT</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid grey;">Socketweld</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid grey;">SW with Pups</div>
                                             <!-- <div class="short-div4">Standard</div>
                                             <div class="short-div2">Fire Safe</div>
                                             <div class="short-div4">Standard</div>
                                             <div class="short-div2" style="border-bottom:0px;">Fire Safe</div>                                             -->
                                         </div>                                                                                
                                         <div class="insidevisit" style="padding:0px">
-                                            <div class="short-div4">600</div>
-                                            <div class="short-div4">600</div>
-                                            <div class="short-div2">600</div>
-                                            <div class="short-div2">600</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid grey;">600</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid grey;">600</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid grey;">600</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid grey;">600</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid grey;">800</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid grey;">800</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid grey;">800</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid grey;">800</div>
                                             <!-- <div class="short-div4">300</div>
                                             <div class="short-div4">300</div>
                                             <div class="short-div2">300</div>
                                             <div class="short-div2" style="border-bottom:0px;">300</div>                                             -->
                                         </div>
                                         <div class="insidevisit" style="padding:0px;padding-right:30px;">
-                                            <div class="short-div4">BL-30-F-P-A3</div>
-                                            <div class="short-div2">BL-30-F-N-A3</div>
-                                            <div class="short-div4">BL-30-F-W-A3</div>
-                                            <div class="short-div2">BL-30-F-WN-A3</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid grey;">BL-30-F-P-A3</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid grey;">BL-30-F-N-A3</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid grey;">BL-30-F-W-A3</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid grey;">BL-30-F-WN-A3</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid grey;">BL-3E-F-P-A4</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid grey;">BL-3E-F-N-A4</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid grey;">BL-3E-F-W-A4</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid grey;">BL-3E-F-WN-A4</div>
                                             <!-- <div class="short-div4">BL-2-R-F-A2</div>
                                             <div class="short-div2">BL-F-2-R-F-A2</div>
                                             <div class="short-div4">BL-2-F-F-A2</div>

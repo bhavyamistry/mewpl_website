@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 date_default_timezone_set('Asia/Kolkata');
-$config['base_url'] = 'http://localhost:8080/mewpl_website/';
+$config['base_url'] = 'http://localhost/mewpl_website/';
 
 /*
 |--------------------------------------------------------------------------

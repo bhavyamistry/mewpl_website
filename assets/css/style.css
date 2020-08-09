@@ -7286,9 +7286,10 @@
                 }
                 
                 .short-div4 {
-                    padding: 5px;
+                    padding-top: 5px;
                     height: auto;
                     border-bottom: 1px solid #edf3fd;
+                    padding-bottom: 5px;
                 }
                 
                 #overlay {
