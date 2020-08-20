@@ -41,10 +41,10 @@
                                 <!--Nav Button  -->
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false"> Features </a>
-                                        
-                                    </div>
+                                        <a class="nav-item nav-link active" id="nav-home-tab" href="<?php echo base_url('products'); ?>/General_purpose_fet" role="tab" aria-controls="nav-home" style="font-size:22px;color:#FFCC2A;" aria-selected="false">Features</a>
+                                    </div>                                    
                                 </nav>
+                                <!--text-decoration: underline;text-decoration-color:#0D5995; -->
                                 <!--End Nav Button  -->
                             </div>
                         </div>

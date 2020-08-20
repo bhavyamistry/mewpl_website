@@ -64,8 +64,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_jacket.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Jacketed Ball Valve</a></h4>        
+                                                    <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=1" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=1">Jacketed Ball Valve</a></h4>        
                                                 </div>
                                             </div>
                                         </div>
@@ -75,8 +75,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_trunion.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Trunnion Mounted Ball Valve</a></h4>        
+                                                    <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=2" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=2">Trunnion Mounted Ball Valve</a></h4>        
                                                 </div>
                                             </div>
                                         </div>
@@ -86,8 +86,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_extended.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Extended Stem Ball Valve</a></h4>
+                                                    <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=3" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=3">Extended Stem Ball Valve</a></h4>
                                                     
                                                 </div>
                                             </div>
@@ -98,8 +98,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_4seat_flange.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Three Way Four Seated Threaded & Flanged Ball Valve</a></h4>                                                
+                                                    <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=4" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=4">Three Way Four Seated Threaded & Flanged Ball Valve</a></h4>                                                
                                                 </div>
                                             </div>
                                         </div>
@@ -109,8 +109,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_2seat_flange.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Three Way Two Seated L Port Flanged Ball Valve</a></h4>                                                    
+                                                    <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=5" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=5">Three Way Two Seated L Port Flanged Ball Valve</a></h4>                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -120,8 +120,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_flush.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Uni-directional Flush Bottom Ball Valve</a></h4>                                                    
+                                                    <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=6" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=6">Uni-directional Flush Bottom Ball Valve</a></h4>                                                    
                                                 </div>
                                             </div>
                                         </div>

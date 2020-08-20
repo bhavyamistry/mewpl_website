@@ -31,7 +31,7 @@
                             <!-- Section Tittle -->
                             <div class="section-tittle section-tittle3">
                                 <div class="front-text">
-                                    <h3 class="">General Purpose Ball Valve</h3>
+                                    <h3 class="">Valve Automation Systems</h3>
                                 </div>
                                 <span class="back-text">Gellary</span>
                             </div>
@@ -40,10 +40,10 @@
                             <div class="properties__button">
                                 <!--Nav Button  -->
                                 <nav>
-                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <!-- <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false"> Features </a>
                                         
-                                    </div>
+                                    </div> -->
                                 </nav>
                                 <!--End Nav Button  -->
                             </div>
@@ -64,8 +64,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_pneumatic.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Pneumatic Actuation Systems </a></h4>        
+                                                    <a href="<?php echo base_url('sub_products/Sub_automation'); ?>?product=1" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_automation'); ?>?product=1">Pneumatic Actuation Systems </a></h4>        
                                                 </div>
                                             </div>
                                         </div>
@@ -75,8 +75,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_electric.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Electric Actuation Systems </a></h4>
+                                                    <a href="<?php echo base_url('sub_products/Sub_automation'); ?>?product=2" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_automation'); ?>?product=2">Electric Actuation Systems </a></h4>
                                                     
                                                 </div>
                                             </div>

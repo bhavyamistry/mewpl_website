@@ -64,8 +64,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/check_valve/ch_gate.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Gate Valve</a></h4>        
+                                                    <a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=1" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=1">Gate Valve</a></h4>        
                                                 </div>
                                             </div>
                                         </div>
@@ -75,8 +75,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/check_valve/ch_globe.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Globe Valve</a></h4>        
+                                                    <a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=2" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=2">Globe Valve</a></h4>        
                                                 </div>
                                             </div>
                                         </div>
@@ -86,8 +86,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/check_valve/ch_swingchk.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Swing Check Valve</a></h4>
+                                                    <a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=3" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=3">Swing Check Valve</a></h4>
                                                     
                                                 </div>
                                             </div>
@@ -98,8 +98,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/check_valve/ch_wafer_load.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Wafer Design Spring Loaded Check Valve</a></h4>                                                
+                                                    <a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=4" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=4">Wafer Design Spring Loaded Check Valve</a></h4>                                                
                                                 </div>
                                             </div>
                                         </div>
@@ -109,8 +109,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/check_valve/ch_wafer_swingchk.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Wafer Design Swing Check Valve</a></h4>                                                    
+                                                    <a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=5" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=5">Wafer Design Swing Check Valve</a></h4>                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -120,8 +120,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/check_valve/ch_forged_gate.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Forged: Gate valve</a></h4>                                                    
+                                                    <a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=6" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=6">Forged: Gate valve</a></h4>                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -131,8 +131,8 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/check_valve/ch_forged_globe.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Forged: Globe Valve</a></h4>                                                    
+                                                    <a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=7" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=7">Forged: Globe Valve</a></h4>                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -142,15 +142,15 @@
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/check_valve/ch_forged_lift.jpg" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Forged: Lift Check Valve</a></h4>                                                    
+                                                    <a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=8" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=8">Forged: Lift Check Valve</a></h4>                                                    
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project6.png" alt="">
+                                                    <img src="<?php //echo base_url('assets/'); ?>img/gallery/project6.png" alt="">
                                                 </div>
                                                 <div class="project-cap">
                                                     <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>

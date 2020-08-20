@@ -282,58 +282,124 @@
                                         </div>
                                     </div>
                                 <?php }else if($product==4){?>
-                                    <div class="table-row">
+                                    <div class="table-row" style="padding-top:5px;padding-bottom:5px;">
                                         <div class="insidevisit">15-55 mm 1/2″ to 2″</div>
                                         <div class="insidevisit" style="padding:0px;">                                            
                                             <div style="padding:0px;">
-                                                <div class="short-div3" style="border-bottom: 1px solid grey;padding-bottom:82px;padding-top:82px">Full</div>
-                                                <div class="short-div3" style="border-bottom: 1px solid grey;padding-bottom:82px;padding-top:82px">Regular</div>
+                                                <div class="short-div3" style="padding-bottom:81px;padding-top:82px;border:0px;">Full</div>
+                                                <!-- <div class="short-div3" style="border-bottom: 1px solid #edf3fd;;padding-bottom:81px;padding-top:82px">Regular</div> -->
                                             </div>
                                             <!-- <div class="short-div3">Full</div>                    
                                             <div class="short-div3">Regular</div>
                                             <div class="short-div3" style="border-bottom:0px;">Full</div> -->
                                         </div> 
                                         <div class="insidevisit" style="padding:0px;">
-                                            <div class="short-div4" style="border-bottom: 1px solid grey;">Screwed- BPS “II”</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid grey;">Screwed-NPT</div>
-                                            <div class="short-div4" style="border-bottom: 1px solid grey;">Socketweld</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid grey;">SW with Pups</div>
-                                            <div class="short-div4" style="border-bottom: 1px solid grey;">Screwed- BPS “II”</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid grey;">Screwed-NPT</div>
-                                            <div class="short-div4" style="border-bottom: 1px solid grey;">Socketweld</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid grey;">SW with Pups</div>
-                                            <!-- <div class="short-div4">Standard</div>
-                                            <div class="short-div2">Fire Safe</div>
-                                            <div class="short-div4">Standard</div>
-                                            <div class="short-div2" style="border-bottom:0px;">Fire Safe</div>                                             -->
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">Screwed- BPS “II”</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">Screwed-NPT</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">Socketweld</div>
+                                            <div class="short-div2" style="border-bottom: 0px">SW with Pups</div>
+                                            <!-- <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">Screwed- BPS “II”</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">Screwed-NPT</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">Socketweld</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">SW with Pups</div> -->                                                                                       
                                         </div>                                                                                
                                         <div class="insidevisit" style="padding:0px">
-                                            <div class="short-div4" style="border-bottom: 1px solid grey;">600</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid grey;">600</div>
-                                            <div class="short-div4" style="border-bottom: 1px solid grey;">600</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid grey;">600</div>
-                                            <div class="short-div4" style="border-bottom: 1px solid grey;">800</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid grey;">800</div>
-                                            <div class="short-div4" style="border-bottom: 1px solid grey;">800</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid grey;">800</div>
-                                            <!-- <div class="short-div4">300</div>
-                                            <div class="short-div4">300</div>
-                                            <div class="short-div2">300</div>
-                                            <div class="short-div2" style="border-bottom:0px;">300</div>                                             -->
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">600</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">600</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">600</div>
+                                            <div class="short-div2" style="border-bottom: 0px">600</div>
+                                            <!-- <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">800</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">800</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">800</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">800</div>                                                                                         -->
                                         </div>
                                         <div class="insidevisit" style="padding:0px;padding-right:30px;">
-                                            <div class="short-div4" style="border-bottom: 1px solid grey;">BL-30-F-P-A3</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid grey;">BL-30-F-N-A3</div>
-                                            <div class="short-div4" style="border-bottom: 1px solid grey;">BL-30-F-W-A3</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid grey;">BL-30-F-WN-A3</div>
-                                            <div class="short-div4" style="border-bottom: 1px solid grey;">BL-3E-F-P-A4</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid grey;">BL-3E-F-N-A4</div>
-                                            <div class="short-div4" style="border-bottom: 1px solid grey;">BL-3E-F-W-A4</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid grey;">BL-3E-F-WN-A4</div>
-                                            <!-- <div class="short-div4">BL-2-R-F-A2</div>
-                                            <div class="short-div2">BL-F-2-R-F-A2</div>
-                                            <div class="short-div4">BL-2-F-F-A2</div>
-                                            <div class="short-div2" style="border-bottom:0px;">BL-F-2-F-F-A2</div>                                     -->
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">BL-30-F-P-A3</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">BL-30-F-N-A3</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">BL-30-F-W-A3</div>
+                                            <div class="short-div2" style="border-bottom: 0px">BL-30-F-WN-A3</div>
+                                            <!-- <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-P-A4</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-N-A4</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-W-A4</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-WN-A4</div>                                                                             -->
+                                        </div>
+                                    </div>
+                                    <div class="table-row" style="padding-top:5px;padding-bottom:5px;">
+                                        <div class="insidevisit">20-50 mm 3/4″ to 2″</div>
+                                        <div class="insidevisit" style="padding:0px;">                                            
+                                            <div style="padding:0px;">
+                                                <div class="short-div3" style="padding-bottom:81px;padding-top:82px;border:0px;">Regular</div>                                                
+                                            </div>
+                                            
+                                        </div> 
+                                        <div class="insidevisit" style="padding:0px;">
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">Screwed- BPS “II”</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">Screwed-NPT</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">Socketweld</div>
+                                            <div class="short-div2" style="border-bottom: 0px">SW with Pups</div>                                            
+                                        </div>                                                                                
+                                        <div class="insidevisit" style="padding:0px">                                            
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">800</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">800</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">800</div>
+                                            <div class="short-div2" style="border-bottom: 0px solid #edf3fd;;">800</div>                                                                                        
+                                        </div>
+                                        <div class="insidevisit" style="padding:0px;padding-right:30px;">                                            
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-P-A4</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-N-A4</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-W-A4</div>
+                                            <div class="short-div2" style="border-bottom: 0px solid #edf3fd;;">BL-3E-F-WN-A4</div>                                                                            
+                                        </div>
+                                    </div>
+                                    <div class="table-row" style="padding-top:5px;padding-bottom:5px;">
+                                        <div class="insidevisit">8-50  mm 1/4″ to 2″</div>
+                                        <div class="insidevisit" style="padding:0px;">                                            
+                                            <div style="padding:0px;">
+                                                <div class="short-div3" style="padding-bottom:81px;padding-top:82px;border:0px;">Full</div>                                                
+                                            </div>
+                                            
+                                        </div> 
+                                        <div class="insidevisit" style="padding:0px;">
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">Srewed-BPS”III”</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">Screwed-NPT</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">Socketweld</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">SW with Pups</div>                                           
+                                            <div class="short-div2" style="border-bottom: 0px">Buttweld ends</div>
+                                        </div>                                                                                
+                                        <div class="insidevisit" style="padding:0px">                                            
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">800</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">800</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">800</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">800</div>
+                                            <div class="short-div2" style="border-bottom: 0px solid #edf3fd;;">800</div>
+                                        </div>
+                                        <div class="insidevisit" style="padding:0px;padding-right:30px;">                                            
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-P-A4</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-N-A4</div>
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-W-A4</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-WN-A4</div>
+                                            <div class="short-div2" style="border-bottom: 0px solid #edf3fd;;">BL-3-F-F-A1</div>
+                                        </div>
+                                    </div>
+                                    <div class="table-row" style="padding-top:5px;padding-bottom:5px;">
+                                        <div class="insidevisit">15-150 mm 1/2″ to 6″</div>
+                                        <div class="insidevisit" style="padding:0px;">                                            
+                                            <div style="padding:0px;">
+                                                <div class="short-div3" style="padding-bottom:21px;padding-top:22px;border:0px;">Full</div>                                                
+                                            </div>
+                                            
+                                        </div> 
+                                        <div class="insidevisit" style="padding:0px;">
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">Flange</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">Flange</div>                                            
+                                        </div>                                                                                
+                                        <div class="insidevisit" style="padding:0px">                                            
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">150</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">*PN16</div>                                            
+                                        </div>
+                                        <div class="insidevisit" style="padding:0px;padding-right:30px;">                                            
+                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">BL-3-F-F-A1</div>
+                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">BL-3-F-F-A1</div>                                            
                                         </div>
                                     </div>
                                 <?php }?>
@@ -489,15 +555,27 @@
                                             <div class="col-lg-12 col-md-12 col-sm-5 table-contents" style="text-align:left;margin-left:15px;">                                                                                        
                                                 <div style="text-align:left;margin-left:15px;" id="design_div4" class="content">
                                                     <ul class="unordered-list">
+                                                        <li>Three Piece Swing out design makes in-line maintenance possible.</li>
                                                         <li>High quality casting.</li>
-                                                        <li>Fully interchangeable trim parts.</li>
-                                                        <li>Blowout proof Stem.</li>                                                
+                                                        <li>Fully interchangeable trim parts.</li>                                                
+                                                        <li>Full or Reduce Bore.</li>
+                                                        <li>Blowout proof Stem.</li>                                                        
                                                         <li>Renewable Seat & Seals.</li>
+                                                        <li>’O’ style body seals (Except flanged).</li>
+                                                        <li>Double Body seals (In Fire safe design only).</li>
                                                         <li>Anti-Static Device.</li>
                                                         <li>Live-loaded design eliminates stem leakage while providing longer life cycle.</li>
+                                                        <li>Mounting Pad to DIN 3337 / ISO 5211.</li>
                                                         <li>Bi-direction design for back flow application.</li>
                                                     </ul>                                                                                    
-                                                    <h5>OPTIONS:</h5><h6>Vented ball to prevent seat damage caused by trapped cavity pressure.</h6>
+                                                    <h5>OPTIONS:</h5>                                                    
+                                                    <ul class="unordered-list">
+                                                        <li>Extended handle for pipe insulation & safety whilst operation.</li>
+                                                        <li>Extended Stem to suit pipe insulation, gland seals deformation, in-line leakage monitoring.</li>
+                                                        <li>Pad lock capabilities provide maximum safety.</li>
+                                                        <li>Vented ball to reduce seat damage caused by trapped cavity pressure.</li>
+                                                        <li>Cavity free seals to reduce the possible entrapment of line media fluids in the void between the ball and the shell</li>
+                                                    </ul>
                                                 </div>
                                                 <div style="text-align:left;margin-left:15px;word-spacing:10px;" id="service_div4" class="content">
                                                     <h6>Chemical    |   Steam   |   Food Processing |   Thermal Fluids Oxygen   |   Vacuum  |   Water/Oil/Gas</h6>
@@ -505,15 +583,20 @@
                                                 <div style="text-align:left;margin-left:15px;word-spacing:5px;" id="standard_div4" class="content">                                        
                                                     <h6><b>Design</b> : ASME B 16.34, BS EN ISO 17292</h6>
                                                     <h6><b>Pressure Test</b> :  API 598 / BS EN ISO 12266-1</h6>
-                                                    <h6><b>End to End</b> : MEWPL’s Std.</h6>
-                                                    <h6><b>End Conn.</b> : BSP’ll’- IS 554 / NPT-ASME B1.20.1</h6>
+                                                    <h6><b>End to End</b> : ASME B 16.10 (Flanged & buttweld)</h6>
+                                                    <h6><b>End Conn.</b> : MEWPL’s Std.(Screwed & Socket weld)</h6>
+                                                    <h6><b>Flange</b> : ANSI B 16.5</h6>
+                                                    <h6><b>Screwed</b> : BSP’ll’- IS 554 / NPT-ASME B1.20.1</h6>
+                                                    <h6><b>Socketweld</b> : ASME B 16.11</h6>
+                                                    <h6><b>Buttweld</b> : ASME 16.25</h6>
+                                                    <h6><b>Mounting Pad</b> :  	DIN 3337/ ISO 5211</h6>                                                     
                                                     <h6><b>Material Certification</b> : DIN 50.049-3 1B</h6>
                                                     <h6><b>Quality Systems / Certifications</b> : ISO 9001</h6>                                                                                                                         
                                                 </div>
                                                 <div style="text-align:center;margin-left:15px;word-spacing:10px;" id="catalog_div4" class="content">
                                                     <div class="col-lg-12 col-md-12 col-sm-5 table-contents" style="display:inline-block;">
-                                                        <a href="<?php echo base_url('assets/').'product_pdf/Split_Body_Screwed_End.pdf';?>" style="display:inherit;">
-                                                            <div class="single-gallery-image" style="background: url(<?php echo base_url('assets/')?>/img/pdf_img/gen_screwed.jpg);width:250px;height:250px;displat:block;"></div>
+                                                        <a href="<?php echo base_url('assets/').'product_pdf/Three_piece_Screwed_SW_&_Flange_ends.pdf';?>" style="display:inherit;">
+                                                            <div class="single-gallery-image" style="background: url(<?php echo base_url('assets/')?>/img/pdf_img/gen_three_flange.jpg);width:250px;height:250px;displat:block;"></div>
                                                         </a>
                                                         <h6>For Detailed Dimension, Please Download E-Catalog</h6>
                                                     </div>                                                    
