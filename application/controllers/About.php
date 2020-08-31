@@ -16,5 +16,16 @@
 	 		$this->load->view('footer');
 		}
 
+		public function Quality_Assurance() {
+			$this->load->view('header');
+			$this->load->view('quality_assurance');
+			$this->load->view('footer');
+	   }
+
+	   public function Certificate() {
+		$this->load->view('header');
+		$this->load->view('certificate');
+		$this->load->view('footer');
+   		}
 	}
 ?>

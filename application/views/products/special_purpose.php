@@ -61,7 +61,7 @@
                                         <div class="col-lg-4 col-md-4">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_jacket.jpg" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_jacket.png" alt="" >
                                                 </div>
                                                 <div class="project-cap">
                                                     <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=1" class="plus-btn"><i class="ti-plus"></i></a>
@@ -72,7 +72,7 @@
                                         <div class="col-lg-4 col-md-4">
                                             <div class="single-project mb-30">
                                                 <div class="project-img" style="width: 100%;">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_trunion.jpg" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_trunion.png" alt="">
                                                 </div>
                                                 <div class="project-cap">
                                                     <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=2" class="plus-btn"><i class="ti-plus"></i></a>
@@ -82,8 +82,8 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
-                                                <div style="width: 100%;">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_extended.jpg" alt="">
+                                                <div class="project-img" style="width: 100%;">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_extended.png" alt="" style="width:inherit;">
                                                 </div>
                                                 <div class="project-cap">
                                                     <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=3" class="plus-btn"><i class="ti-plus"></i></a>
@@ -94,8 +94,8 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_4seat_flange.jpg" alt="">
+                                                <div class="project-img" style="width: 100%;">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_4seat_flange.png" alt="" style="width:inherit;">
                                                 </div>
                                                 <div class="project-cap">
                                                     <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=4" class="plus-btn"><i class="ti-plus"></i></a>
@@ -105,8 +105,8 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_2seat_flange.jpg" alt="">
+                                                <div class="project-img" style="width: 100%;">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_2seat_flange.png" alt="" style="width:inherit;">
                                                 </div>
                                                 <div class="project-cap">
                                                     <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=5" class="plus-btn"><i class="ti-plus"></i></a>
@@ -116,8 +116,8 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_flush.jpg" alt="">
+                                                <div class="project-img" style="width: 100%;">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_flush.png" alt="" style="width:inherit;">
                                                 </div>
                                                 <div class="project-cap">
                                                     <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=6" class="plus-btn"><i class="ti-plus"></i></a>

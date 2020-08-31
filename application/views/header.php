@@ -30,11 +30,11 @@
                                     </ul>
                                 </div>
                                 <div class="header-info-right">
-                                    <ul class="header-social">
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <ul class="header-social">                                        
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        <li> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li> <a href="#"><i class="fas fa-map-marker-alt"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -46,11 +46,11 @@
                         <div class="row align-items-center">
                             <!-- Logo -->
                             <div class="col-xl-3 col-lg-3 col-md-3">
-                                <div class="logo">
+                                <div class="logo"  style="width:90%;">
                                     <!-- logo-1 -->
                                     <a href="<?php echo base_url().'Home'; ?>" class="big-logo"><img src="<?php echo base_url('assets/'); ?>img/logo/final_logo.png" alt="" style="width:100%;"></a>
                                     <!-- logo-2 -->
-                                    <a href="<?php echo base_url().'Home'; ?>" class="small-logo"><img src="<?php echo base_url('assets/'); ?>img/logo/final_logo.png" alt=""></a>
+                                    <a href="<?php echo base_url().'Home'; ?>" class="small-logo"><img src="<?php echo base_url('assets/'); ?>img/logo/final_logo.png" alt="" style="width:100%;"></a>
                                 </div>
                             </div>
                             <div class="col-xl-7 col-lg-7 col-md-7">
@@ -61,8 +61,8 @@
                                             <li><a href="<?php echo base_url().'Home'; ?>">Home</a></li>
                                             <li><a href="<?php echo base_url().'About'; ?>">About Us</a>
                                                 <ul class="submenu">
-                                                    <li><a href="elements.html">Certificates</a></li>
-                                                    <li><a href="project_details.php">Quality Assurance</a></li>                                                    
+                                                    <li><a href="<?php echo base_url().'About/Certificate'; ?>">Certificates</a></li>
+                                                    <li><a href="<?php echo base_url().'About/Quality_Assurance'; ?>">Quality Assurance</a></li>                                                    
                                                 </ul>
                                             </li>
                                             <li><a href="<?php echo base_url().'products/All_products'; ?>">Products</a>
@@ -76,41 +76,31 @@
                                                         </ul>
                                                     </li>
                                                     <li><a href="<?php echo base_url().'products/Special_purpose'; ?>">Special Purpose Ball Valve</a>
-                                                        <ul class="submenu" style="left:100%;top:0;margin-top: -1px;">
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body, Full Bore, Side Entry Screwed End Ball Valve</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body, Full Bore, Side Entry Screwed End Ball Valve</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body, Full Bore, Side Entry Screwed End Ball Valve</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body, Full Bore, Side Entry Screwed End Ball Valve</a></li>
+                                                        <ul class="submenu" style="left:100%;top:0;margin-top: -1px;margin-left:5px;">
+                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body Threaded End</a></li>
+                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Single Piece Flange End</a></li>
+                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Two Piece Flange End</a></li>
+                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Three Piece Thread, SW , Flange End</a></li>
                                                         </ul>
                                                     </li>
                                                     <li><a href="<?php echo base_url().'products/Gate_globe_check'; ?>">Gate, Globe, Lift & Swing Check Valve</a>
-                                                        <ul class="submenu" style="left:100%;top:0;margin-top: -1px;">
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body, Full Bore, Side Entry Screwed End Ball Valve</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body, Full Bore, Side Entry Screwed End Ball Valve</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body, Full Bore, Side Entry Screwed End Ball Valve</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body, Full Bore, Side Entry Screwed End Ball Valve</a></li>
+                                                        <ul class="submenu" style="left:100%;top:0;margin-top: -1px;margin-left:5px;">
+                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body Threaded End</a></li>
+                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Single Piece Flange End</a></li>
+                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Two Piece Flange End</a></li>
+                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Three Piece Thread, SW , Flange End</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="<?php echo base_url().'products/Valve_automation'; ?>">Valve Automation Systems</a>
-                                                        <ul class="submenu" style="left:100%;top:0;margin-top: -1px;">
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body, Full Bore, Side Entry Screwed End Ball Valve</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body, Full Bore, Side Entry Screwed End Ball Valve</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body, Full Bore, Side Entry Screwed End Ball Valve</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body, Full Bore, Side Entry Screwed End Ball Valve</a></li>
-                                                        </ul>
+                                                    <li><a href="<?php echo base_url().'products/Valve_automation'; ?>">Valve Automation Systems</a>                                                        
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><a href="<?php echo base_url().'Project'; ?>">Projects</a></li>      
-                                            <li><a href="<?php echo base_url().'Project'; ?>">Services</a></li>
-                                            <li><a href="<?php echo base_url().'Project'; ?>">Blog</a></li>
-                                            <li><a href="#">Pages</a>
+                                            <li><a href="<?php echo base_url().'Client'; ?>">Clients</a>
                                                 <ul class="submenu">
-                                                    <li><a href="elements.html">Element</a></li>
-                                                    <li><a href="project_details.php">Projects Details</a></li>
-                                                    <li><a href="services_details.php">Services Details</a></li>
+                                                    <li><a href="<?php echo base_url().'Client/Customer_Appraisal'; ?>">Customer Appraisal</a></li>                                                    
                                                 </ul>
-                                            </li>
+                                            
+                                            <li><a href="<?php echo base_url().'Gallery'; ?>">Valve Gallery</a></li></li>
                                             <li><a href="<?php echo base_url().'Contact'; ?>">Contact</a></li>
                                         </ul>
                                     </nav>
@@ -118,7 +108,7 @@
                             </div>
                             <div class="col-xl-2 col-lg-2 col-md-2">
                                 <div class="header-right-btn f-right d-none d-lg-block">
-                                    <a href="#" class="btn">Contact Now</a>
+                                    <a href="<?php echo base_url().'Enquiry'?>" class="btn">Enquiry</a>
                                 </div>
                             </div>
                             <!-- Mobile Menu -->

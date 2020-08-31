@@ -38,8 +38,7 @@
                                 <h2>About us</h2>
                                 <nav aria-label="breadcrumb ">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Product</a></li>
+                                        <li class="breadcrumb-item"><a href="<?php echo base_url().'Home'?>">Home</a></li>                                        
                                     </ol>
                                 </nav>
                             </div>
@@ -62,22 +61,22 @@
                     </div>
                     <div class="support-caption" style="padding-right:50px;text-align:left;font-family:Avant Garde;font-size:18px;">
                         <div class="col-md-12" style="height:45%">
-                            <blockquote class="generic-blockquote" style="text-align: initial;padding: 20px 20px 15px 20px;"><h5>
+                            <blockquote class="generic-blockquote" style="text-align: initial;padding: 5%;"><h5>
                                 Mevada Engineering Works Pvt. Ltd.(MEWPL) is a leading manufacturer of industrial valves under its registered brand SATURN® for past decades having its manufacturing facility in Mumbai, India staffed by competent engineers and technicians.    
                             <h5></blockquote>
                         </div>
                         <div class="col-md-12" style="height:45%">
-                            <blockquote class="generic-blockquote" style="text-align: initial;padding: 20px 20px 15px 20px"><h5>
+                            <blockquote class="generic-blockquote" style="text-align: initial;padding: 5%;margin-top:4%;"><h5>
                             Saturn Valve “SATURN”, the brand chooses to stand firm in the Indian and International market with promise, standard and guarantee. We are a reputed manufacturer of Industrial valves in India since 1959.    
                             <h5></blockquote>
                         </div>
                         <div class="col-md-12" style="height:45%">
-                            <blockquote class="generic-blockquote" style="text-align: initial;padding: 20px 20px 15px 20px"><h5>
+                            <blockquote class="generic-blockquote" style="text-align: initial;padding: 5%;margin-top:4%;"><h5>
                             MEWPL is a leading manufacturer of industrial valves under its registered brand SATURN® for past 5 decades having its manufacturing facility in Mumbai, India staffed by competent engineers and  technicians.
                             <h5></blockquote>
                         </div>                 
                         
-                        <button class="btn red-btn2" id="read-more">read more</button>
+                        
                     </div>
                 </div>
                 <div class="col-md-6 right-content" style="display:inline-block;padding-top:5%;padding-bottom:2%;">
@@ -90,6 +89,11 @@
                         <p>Since</p>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <button class="btn red-btn2" id="read-more" style="right:0%;margin:5%;">read more</button>
+                </div>
+                <div class="col-md-4 col-sm-0"></div>
+                <div class="col-md-4 col-sm-0"></div>
                 <div class="col-md-1"></div>
                 <div class="col-md-10" style="display:inline-block;padding-top:2%;display:none;border:2px solid black;margin-top:2%;overflow:auto" id="more-content">
                     <!-- img -->
@@ -191,7 +195,7 @@
                                         <?php } else if($i==5){?>
                                             <div style="text-align:center;padding-bottom:20px;height:100%;margin-bottom:2%;" class="row">
                                                 <div class="col-md-3" style="vertical-align:middle;">
-                                                <img src="<?php echo base_url('assets/'); ?>img/testimonial/test_1.png" style="display:initial;height:100%;width:80%;position: relative;top: 50%;transform: translateY(-30%);" />
+                                                <img src="<?php echo base_url('assets/'); ?>img/testimonial/test_1.png" style="display:initial;height:70%;width:80%;position: relative;top: 50%;transform: translateY(-30%);" />
                                                 </div>
                                                 <div class="col-md-9" style="text-align:left;">
                                                     <p style="font-size:18px;margin-bottom:0;">This is to certify that M/S Mevad Engineering Works Pvt. Ltd. Plot No. 09, Mistry Industrial Estate, I.B Patel Road Goreaon (East), Mumbai-400063 has supplied approximately 100 Valves in Hastelloy -C & SS MOC of 150#, 300# , 600# Class for hydrgen  & other services.<br>
@@ -240,7 +244,7 @@
                                         <?php } else if($i==9){?>
                                             <div style="text-align:center;padding-bottom:20px;height:100%;margin-bottom:2%;" class="row">
                                                 <div class="col-md-3" style="vertical-align:middle;">
-                                                <img src="<?php echo base_url('assets/'); ?>img/testimonial/test_9.png" style="display:initial;height:50%;width:80%;position: relative;top: 50%;transform: translateY(-70%);" />
+                                                <img src="<?php echo base_url('assets/'); ?>img/testimonial/test_9.png" style="display:initial;height:90%;width:80%;position: relative;top: 50%;transform: translateY(-70%);" />
                                                 </div>
                                                 <div class="col-md-9" style="text-align:left;">
                                                     <p style="font-size:18px;margin-bottom:0;">This to certify that we have been using "SATURN" brand ball valves manufactured and supplied by M/S MEVADA ENGINEERING WORKS PVT. LTD. MUMBAI of 150 3 and 300# flanged end . Sizes 1" to 6" Ball Valve since 200405. these valves have been installed in different area at our Thane Belapur (Navi Mumbai) Plant and performing trouble free service.                                                    
@@ -284,7 +288,7 @@
                                         <?php } else if($i==13){?>
                                             <div style="text-align:center;padding-bottom:20px;height:100%;margin-bottom:2%;" class="row">
                                                 <div class="col-md-3" style="vertical-align:middle;">
-                                                <img src="<?php echo base_url('assets/'); ?>img/testimonial/test_13.png" style="display:initial;height:90%;width:80%;position: relative;top: 50%;transform: translateY(-30%);" />
+                                                <img src="<?php echo base_url('assets/'); ?>img/testimonial/test_13.png" style="display:initial;height:50%;width:80%;position: relative;top: 50%;transform: translateY(-30%);" />
                                                 </div>
                                                 <div class="col-md-9" style="text-align:left;">
                                                     <p style="font-size:18px;margin-bottom:0;">This is to certify that we have been using "SATURN" Brand  Ball Valves and Jacketed  and ball valves as per DIN standard manufactured by Mevada Engineering Works Pvt. Ltd., Mumbai.<br>
@@ -295,7 +299,7 @@
                                         <?php } else if($i==14){?>
                                             <div style="text-align:center;padding-bottom:20px;height:100%;margin-bottom:2%;" class="row">
                                                 <div class="col-md-3" style="vertical-align:middle;">
-                                                <img src="<?php echo base_url('assets/'); ?>img/testimonial/test_14.png" style="display:initial;height:90%;width:80%;position: relative;top: 50%;transform: translateY(-45%);" />
+                                                <img src="<?php echo base_url('assets/'); ?>img/testimonial/test_14.png" style="display:initial;height:70%;width:80%;position: relative;top: 50%;transform: translateY(-45%);" />
                                                 </div>
                                                 <div class="col-md-9" style="text-align:left;">
                                                     <p style="font-size:18px;margin-bottom:0;">This is to certify that we have been using "SATURN" ball valves Class-300& 600 since 18-12-2001.. They ware manufactured & supplied by M/S. Mevada Engg.Works Pvt. Ltd. , Mumbai. All the valves are giving trouble Free Performance at our Hydrogen plant since then.                                                    
@@ -305,7 +309,7 @@
                                         <?php } else if($i==15){?>
                                             <div style="text-align:center;padding-bottom:20px;height:100%;margin-bottom:2%;" class="row">
                                                 <div class="col-md-3" style="vertical-align:middle;">
-                                                <img src="<?php echo base_url('assets/'); ?>img/testimonial/test_15.png" style="display:initial;height:90%;width:80%;position: relative;top: 50%;transform: translateY(-45%);" />
+                                                <img src="<?php echo base_url('assets/'); ?>img/testimonial/test_15.png" style="display:initial;height:70%;width:80%;position: relative;top: 50%;transform: translateY(-45%);" />
                                                 </div>
                                                 <div class="col-md-9" style="text-align:left;">
                                                     <p style="font-size:18px;margin-bottom:0;">This is to certify that we have been using "SATURN" ball valves of various sizes and classes with ROTEX make actuator in our panoli , (Ankelshwar) Plant in different services installed since plant established (1997) Valves are giving satisfactory performance.<br>
@@ -470,10 +474,6 @@
                                 </div>
                             </div>
                                 <?php }?>
-                            
-
-
-
                         </div>
                     </div>
                 </div>
