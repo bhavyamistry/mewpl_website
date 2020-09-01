@@ -32,11 +32,34 @@
         <script type="text/javascript">
             //<![CDATA[ 
             // array of possible countries in the same order as they appear in the country selection list 
-            var products = new Array(4); 
-            products["empty"] = ["Select a Product"]; 
-            products["General"] = ["Select Product","Split Body Threaded End", "Single Piece Flange End", "Two Piece Flange End",'Three Piece Thread, SW , Flange End']; 
-            products["Special"] = ["Select Product","Jacketed", "Trunnion Mounted", "Extended Stem", "Three Way Four Seated Threaded & Flanged","Three Way Two Seated L Port Flanged","Uni-directional Flush Bottom"]; 
-            products["GGC"] = ["Select Product","Gate", "Globe", "Swing Check","Wafer Design Spring Loaded","Wafer Design Swing Check","Forged: Gate","Forged: Globe","Forged: Lift Check"]; 
+            var products = new Array(3);
+            products["General"] = [
+                {"name":"Select Product","selected":"0"},
+                {"name":"Split Body Threaded End","selected":"0"}, 
+                {"name":"Single Piece Flange End","selected":"0"}, 
+                {"name":"Two Piece Flange End", "selected":"0"},
+                {"name":"Three Piece Thread, SW , Flange End","selected":"0"}
+            ]; 
+            products["Special"] = [
+                {"name":"Select Product","selected":"0"},
+                {"name":"Jacketed","selected":"0"},
+                {"name":"Trunnion Mounted","selected":"0"},
+                {"name":"Extended Stem","selected":"0"},
+                {"name":"Three Way Four Seated Threaded & Flanged","selected":"0"},
+                {"name":"Three Way Two Seated L Port Flanged","selected":"0"},
+                {"name":"Uni-directional Flush Bottom","selected":"0"}
+            ]; 
+            products["GGC"] = [
+                {"name":"Select Product","selected":"0"},
+                {"name":"Gate","selected":"0"},
+                {"name":"Globe","selected":"0"},
+                {"name":"Swing Check","selected":"0"},
+                {"name":"Wafer Design Spring Loaded","selected":"0"},
+                {"name":"Wafer Design Swing Check","selected":"0"},
+                {"name":"Forged: Gate","selected":"0"},
+                {"name":"Forged: Globe","selected":"0"},
+                {"name":"Forged: Lift Check","selected":"0"}
+            ]; 
             
             /* CountryChange() is called from the onchange event of a select element. 
             * param selectObj - the select object which fired the on change event. 
@@ -60,8 +83,8 @@
                 // create new options 
                 for (var i=0; i<cList.length; i++) { 
                     newOption = document.createElement("option"); 
-                    newOption.value = cList[i];  // assumes option string and value are the same 
-                    newOption.text=cList[i]; 
+                    newOption.value = cList[i].name;  // assumes option string and value are the same 
+                    newOption.text= cList[i].name; 
                 // add the new option 
                     try { 
                         cSelect.add(newOption);
@@ -70,13 +93,16 @@
                     catch (e) { 
                         cSelect.appendChild(newOption); 
                     }
-                    cSelect.options[0].disabled = true;
-                    cSelect.options[0].selected = true; 
-                    cSelect.options[0].hidden = true;
-                    cSelect.options[0].value = "empty";
+                    if(cList[i].selected!="0")
+                    {
+                        cSelect.options[i].disabled = true;
+                    }
                 } 
+                cSelect.options[0].disabled = true;
+                cSelect.options[0].selected = true; 
+                cSelect.options[0].hidden = true;
+                cSelect.options[0].value = "empty";
             }
-
             
             function duplicate(cnt) {
                 var pro = document.getElementById("product"+cnt).value;
@@ -93,7 +119,7 @@
                 else
                 {
                     var counter = document.getElementById("counter").value;
-                    alert(counter);
+                    // alert(counter);
                     $('#pro_div_but_'+counter).css("visibility", "hidden");
                     var original = document.getElementById("pro_div" + counter);
                     var clone = original.cloneNode(true); // "deep" clone
@@ -101,6 +127,10 @@
                     clone.id = "pro_div" +i; // there can only be one element with an ID
                     $('.add-pro').append('<div class="col-12" id="pro_div'+i+'"><div class="row"><div class="col-sm-2"><img src="<?php echo base_url("assets/")?>img/products/img_icon.png" id="pro_img'+(i)+'" alt="" style="width:100%;"></div><div class="col-sm-4" style="display: grid;align-content: center;"><select class="form-control valid" style="width:100%;" id="product'+(i)+'" name="product'+(i)+'" onchange="productChange(this,'+(i)+');" required><option value="empty" selected disabled hidden>Select Product Category</option><option value="General">General Purpose</option><option value="Special">Special Purpose</option><option value="GGC">Gate, Globe, Lift & Swing Check</option></select></div><div class="col-sm-4" style="display: grid;align-content: center;"><select class="form-control valid" onchange="setimg(this,'+(i)+');" style="width:100%;" id="sub_pro'+(i)+'" name="sub_pro'+(i)+'" required><option value="empty" selected disabled hidden>Select Product</option></select></div><div class="col-sm-1" style="display: grid;align-content: center;"><div id="pro_div_but_'+i+'" class="plus-btn" style="border-radius: 8px;color:white;background-color:#ffcc2a;padding:25%;" onclick="duplicate('+i+');"><i class="ti-plus"></i></div></div><div class="col-sm-1" style="display: grid;align-content: center;"><div class="plus-btn" style="border-radius: 8px;color:white;background-color:red;padding:25%;" onclick="remove_duplicate('+i+');"><i class="ti-minus"></i></div></div></div></div>');
                     document.getElementById("counter").value = i;
+                    objIndex = products[pro].findIndex((obj => obj.name == sub ));
+                    // alert("Index:"+objIndex);                    
+                    products[pro][objIndex].selected = cnt;
+                    // console.log(products[pro]);
                 }
                 
             }
@@ -110,86 +140,88 @@
                 // alert(sel.value);
                 // alert(ind);
                 var path="";
-                if($.inArray(sel.value, products["General"]) !== -1)
+                var pro = document.getElementById("product"+ind).value;
+                const objIndex = products[pro].findIndex(obj => obj.name == sel.value);
+                // alert(objIndex);
+                // alert(products["General"][objIndex].name);
+                if(sel.value == products["General"][objIndex].name)
                 {
-                    var index = $.inArray(sel.value, products["General"]);
-                    // alert(index);
-                    if(index==1) {
+                    if(objIndex==1) {
                         path="general_purpose/gp_screwed.jpg";
                     }
-                    else if(index==2) {
+                    else if(objIndex==2) {
                         path="general_purpose/gp_single_flange.png";
                     }
-                    else if(index==3) {
+                    else if(objIndex==3) {
                         path="general_purpose/gp_two_flange.jpg";
                     }
-                    else if(index==4) {
+                    else if(objIndex==4) {
                         path="general_purpose/gp_three_side.jpg";
                     }
                 }
-                else if($.inArray(sel.value, products["Special"]) !== -1)
+                else if(sel.value == products["Special"][objIndex].name)
                 {
-                    var index = $.inArray(sel.value, products["Special"]);
-                    // alert(index);
-                    if(index==1) {
+                    if(objIndex==1) {
                         path="special_purpose/sp_jacket.png";
                     }
-                    else if(index==2) {
+                    else if(objIndex==2) {
                         path="special_purpose/sp_trunion.png";
                     }
-                    else if(index==3) {
+                    else if(objIndex==3) {
                         path="special_purpose/sp_extended.png";
                     }
-                    else if(index==4) {
+                    else if(objIndex==4) {
                         path="special_purpose/sp_4seat_flange.png";
                     }
-                    else if(index==5) {
+                    else if(objIndex==5) {
                         path="special_purpose/sp_2seat_flange.png";
                     }
-                    else if(index==6) {
+                    else if(objIndex==6) {
                         path="special_purpose/sp_flush.png";
                     }                   
                 }
-                else if($.inArray(sel.value, products["GGC"]) !== -1)
+                else if(sel.value == products["GGC"][objIndex].name)
                 {
-                    var index = $.inArray(sel.value, products["GGC"]);
-                    // alert(index);
-                    if(index==1) {
+                    if(objIndex==1) {
                         path="check_valve/ch_gate.jpg";
                     }
-                    else if(index==2) {
+                    else if(objIndex==2) {
                         path="check_valve/ch_globe.jpg";
                     }
-                    else if(index==3) {
+                    else if(objIndex==3) {
                         path="check_valve/ch_swingchk.jpg";
                     }
-                    else if(index==4) {
+                    else if(objIndex==4) {
                         path="check_valve/ch_wafer_load.jpg";
                     }
-                    else if(index==5) {
+                    else if(objIndex==5) {
                         path="check_valve/ch_wafer_swingchk.jpg";;
                     }
-                    else if(index==6) {
+                    else if(objIndex==6) {
                         path="check_valve/ch_forged_gate.jpg";
                     }
-                    else if(index==7) {
+                    else if(objIndex==7) {
                         path="check_valve/ch_forged_globe.jpg";
                     }
-                    else if(index==8) {
+                    else if(objIndex==8) {
                         path="check_valve/ch_forged_lift.jpg";
                     }                   
                 }
-
-                $('#pro_img'+ind).attr('src','<?php echo base_url('assets/')?>img/products/'+path);
+                $('#pro_img'+ind).attr('src','<?php echo base_url('assets/')?>img/products/'+path);                
             }
 
             function remove_duplicate(cnt) {
+                var pro = document.getElementById("product"+cnt).value;
+                var sub = document.getElementById("sub_pro"+cnt).value;
                 var counter = cnt;
-                alert("remove"+counter);
+                // alert("remove"+counter);
                 $('#pro_div'+counter).remove();
                 var i = parseInt(counter) - parseInt(1);
                 document.getElementById("counter").value = i;
                 $('#pro_div_but_'+i).css("visibility", "visible");
+                objIndex = products[pro].findIndex((obj => obj.name == sub ));
+                // alert("Index:"+objIndex);                    
+                products[pro][objIndex].selected = "0";
             }
             //]]>
         </script>
@@ -220,115 +252,100 @@
     <!-- slider Area End-->
     <!-- ================ contact section start ================= -->
     <section class="contact-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-8">
-                        <h2 class="contact-title">Enquiry</h2>
-                    </div>
-                    <div class="col-lg-8">
-                        <form class="form-contact contact_form" method="post" id="contactForm">
-                            <div class="row">                                
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name" required>
-                                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="contact-title">Enquiry</h2>
+                </div>
+                <div class="col-lg-8">
+                    <form class="form-contact contact_form" method="post" id="enquiryForm">
+                        <div class="row">                                
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name" required>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="bname" id="bname" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Company name'" placeholder="Enter your Company name" required>
-                                    </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="bname" id="bname" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Company name'" placeholder="Enter your Company name" required>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="num" id="num" type="text" oninput="numberOnly(this.id);" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your phone number'" placeholder="Enter your phone number" maxlength="10" minlength="10" required>
-                                    </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="num" id="num" type="text" oninput="numberOnly(this.id);" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your phone number'" placeholder="Enter your phone number" maxlength="10" minlength="10" required>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email" required>
-                                    </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="checkEmail();" value="" placeholder="Email" required>
                                 </div>
-                                <div class="add-pro">
-                                    <div class="col-12" id="pro_div1">
-                                        <div class="row">
-                                            <div class="col-sm-2">
-                                                <img src="<?php echo base_url('assets/')?>img/products/img_icon.png" alt="" style="width:100%;" id="pro_img1">                                        
-                                            </div>
-                                            <div class="col-sm-4" style="display: grid;align-content: center;">
-                                                <select class="form-control valid" style="width:100%;" id="product1" name="product1" onchange="productChange(this,1);" required>
-                                                    <option value="empty" selected disabled hidden>Select Product Category</option>
-                                                    <option value="General">General Purpose</option>
-                                                    <option value="Special">Special Purpose</option>
-                                                    <option value="GGC">Gate, Globe, Lift & Swing Check</option>
-                                                </select>
-                                                <input type="hidden" id="counter" name="counter" value="1">
-                                            </div>
-                                            <div class="col-sm-4" style="display: grid;align-content: center;">
-                                                <select class="form-control valid" style="width:100%;" id="sub_pro1" name="sub_pro1" onchange="setimg(this,1);" required>
-                                                    <option value="empty" selected disabled hidden>Select Product</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-sm-1" style="display: grid;align-content: center;">
-                                                <div id="pro_div_but_1" class="plus-btn" style="border-radius: 8px;color:white;background-color:#ffcc2a;padding:25%;" onclick="duplicate(1);">
-                                                    <i class="ti-plus"></i>
-                                                </div>
-                                            </div>
+                            </div>
+                            <div class="add-pro" style="width:100%;">
+                                <div class="col-12" id="pro_div1">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <img src="<?php echo base_url('assets/')?>img/products/img_icon.png" alt="" style="width:100%;" id="pro_img1">                                        
                                         </div>
+                                        <div class="col-sm-4" style="display: grid;align-content: center;">
+                                            <select class="form-control valid" style="width:100%;" id="product1" name="product1" onchange="productChange(this,1);" required>
+                                                <option value="empty" selected disabled hidden>Select Product Category</option>
+                                                <option value="General">General Purpose</option>
+                                                <option value="Special">Special Purpose</option>
+                                                <option value="GGC">Gate, Globe, Lift & Swing Check</option>
+                                            </select>
+                                            <input type="hidden" id="counter" name="counter" value="1">
+                                        </div>
+                                        <div class="col-sm-4" style="display: grid;align-content: center;">
+                                            <select class="form-control valid" style="width:100%;" id="sub_pro1" name="sub_pro1" onchange="setimg(this,1);" required>
+                                                <option value="empty" selected disabled hidden>Select Product</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-1" style="display: grid;align-content: center;">
+                                            <div id="pro_div_but_1" class="plus-btn" style="border-radius: 8px;color:white;background-color:#ffcc2a;padding:25%;" onclick="duplicate(1);">
+                                                <i class="ti-plus"></i>
+                                            </div>
+                                        </div>                                            
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Requirement'" placeholder=" Enter Requirement" required></textarea>
-                                    </div>
-                                </div>
+                                </div>                                    
                             </div>
-                            <div class="form-group mt-3">
-                                <input type="submit" class="button button-contactForm boxed-btn" value="Send" />
-                                <input type="hidden" name="button_pressed" value="1" />
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-3 offset-lg-1">
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-home"></i></span>
-                            <div class="media-body">
-                                <h3>Mistry Ind. Estate,I. B. Patel Road, Goregaon (East)</h3>
-                                <p>,Mumbai- 400063</p>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Requirements'" placeholder=" Enter Requirements"></textarea>
+                                </div>
                             </div>
                         </div>
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                            <div class="media-body">
-                                <h3>91-22-26859960 / 42523200</h3>
-                                <p>Mon to Fri 9am to 5pm</p>
-                            </div>
+                        <div class="form-group mt-3">
+                            <input type="submit" class="button button-contactForm boxed-btn" value="Send" />
+                            <input type="hidden" name="button_pressed" value="1" />
                         </div>
-                        <div class="media contact-info">
-                            <span class="contact-info__icon"><i class="ti-email"></i></span>
-                            <div class="media-body">
-                                <h3>sales@saturnvalves.com / info@saturnvalves.com</h3>
-                                <p>Send us your Enqueries anytime!</p>
-                            </div>
-                        </div>                        
+                    </form>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-home"></i></span>
+                        <div class="media-body">
+                            <h3>Mistry Ind. Estate,I. B. Patel Road, Goregaon (East)</h3>
+                            <p>,Mumbai- 400063</p>
+                        </div>
                     </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                        <div class="media-body">
+                            <h3>91-22-26859960 / 42523200</h3>
+                            <p>Mon to Fri 9am to 5pm</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-email"></i></span>
+                        <div class="media-body">
+                            <h3>sales@saturnvalves.com / info@saturnvalves.com</h3>
+                            <p>Send us your Enqueries anytime!</p>
+                        </div>
+                    </div>                        
                 </div>
             </div>
-        </section>
-        
-        <?php 
-            $_SESSION = [];
-            if (isset($_POST['button_pressed'])) { 
-                session_start();
-                $_SESSION['name'] = $_POST['name'];
-                $_SESSION['bname'] = $_POST['bname'];
-                $_SESSION['message'] = $_POST['message'];
-                $_SESSION['num'] = $_POST['num'];
-                $_SESSION['email'] = $_POST['email'];
-                $_SESSION['subject'] = $_POST['subject'];
-                header('Location: '.base_url().'Contact/sendMail');
-                
-            } 
-        ?> 
+        </div>
+    </section>
     <!-- ================ contact section end ================= -->
     <!-- JS here -->
 	
@@ -340,24 +357,61 @@
         </script>
 		<script type="text/javascript" src="<?php echo base_url('assets/'); ?>js/vendor/jquery-1.12.4.min.js"></script>
         <script type="text/javascript"> 
-            
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            $(document).ready(function() {
 
-            $(document).ready(function(){
-                alert("Loaded");
-                // function getpro(sel){
-                //     alert("Value changed");
-                //     var selectedproduct = sel. val();
-                //     if(selectedproduct=="pro1")
-                //     { 
-                //         $('#selectBox').append($('<option>').val(optionValue).text(optionText))
-                //         $('#sub_pro').append('<option value="Split Body Threaded End">Split Body Threaded End</option>'); 
-                //         $('#sub_pro').append('<option value="Single Piece Flange End">Single Piece Flange End</option>'); 
-                //         $('#sub_pro').append('<option value="Two Piece Flange End">Two Piece Flange End</option>'); 
-                //         $('#sub_pro').append('<option value="Three Piece Thread, SW , Flange End">Three Piece Thread, SW , Flange End</option>'); 
-                //     }
-                // }
+                (function($) {
+                    "use strict";
+
+
+                    // validate contactForm form
+                    $(function() {
+                        $('#inquiryForm').validate({
+                            rules: {
+                                email: {
+                                    required: true,
+                                    email: true,
+                                    email_exits: true
+                                },
+                            },
+                            messages: {
+                                
+                                email: {
+                                    required: "no email, no message",
+                                    email_exists: "No Email Id Exists"
+                                }
+                                
+                            },
+                            submitHandler: function(form) {
+                                $(form).ajaxSubmit({
+                                    type: "POST",
+                                    data: $(form).serialize(),
+                                    url: "Contact/sendMail",
+                                    success: function() {
+                                        $('#contactForm :input').attr('disabled', 'disabled');
+                                        $('#contactForm').fadeTo("slow", 1, function() {
+                                            $(this).find(':input').attr('disabled', 'disabled');
+                                            $(this).find('label').css('cursor', 'default');
+                                            $('#success').fadeIn()
+                                            $('.modal').modal('hide');
+                                            $('#success').modal('show');
+                                        })
+                                    },
+                                    error: function() {
+                                        $('#contactForm').fadeTo("slow", 1, function() {
+                                            $('#error').fadeIn()
+                                            $('.modal').modal('hide');
+                                            $('#error').modal('show');
+                                        })
+                                    }
+                                })
+                            }
+                        })
+                    })
+
+                })(jQuery)
             });
-
+            
             function numberOnly(id) {
                 // Get element by id which passed as parameter within HTML element event
                 var element = document.getElementById(id);
@@ -366,23 +420,81 @@
                 // This removes any other character but numbers as entered by user
                 element.value = element.value.replace(regex, "");
             }
-            $(document).ready(function(){
-                $('#contactForm').on('submit',function(e) {
-                    $.ajax({
-                        url: <?= base_url().'Contact/sendMail'?>,
-                        data: $(this).serialize(),
-                        dataType: "json",
-                        type: 'POST',
-                        success: function(data) {
-                            console.log(data);
-                             // Display the data on the current screen.
-                            $('#form')[0].reset(); // reset the form so the user doesn't double click and submit the data twice
-                        }
-                    });
-                    e.preventDefault();
-                });
+           
+            function checkEmail()
+            {
+                // $(this).attr("placeholder", "Type your answer here");
+                
+                $('#email').attr("placeholder","Enter email address");                
+                alert($('#email').val());
+                if($('#email').val() != '')
+                {
+                    $('#email').validate();
+                    if(!emailReg.test($('#email').val()))
+                    {
+                        alert("Not valid");
+                    }
+                    else
+                    {
+                        alert("Valid");
+                        var url = "<?php echo base_url('Enquiry/checkEmail')?>";
+                        var email_id = $('#email').val();
+                        var postData = $('#enquiryForm').serialize();
+                        $.ajax(
+                        {
+                            url : url,                            
+                            type: "POST",
+                            data : {"email": email_id},
+                            success:function(data, status, xhr) 
+                            {
+                                if(status == "success")
+                                {
+                                    alert(data); 
+                                    if(data!="true")
+                                    {
+                                        $.validator.addMethod("oneormorechecked", function(value, element) {
+                                            return $('input[name="' + element.name + '"]:checked').length > 0;
+                                        }, "Atleast 1 must be selected");
 
-            });            
+                                        $('.validate').validate();
+                                    }
+                                // Do something on page
+                                }
+                                else
+                                { 
+                                // Do something on page
+                                }
+                            },
+                        });  
+                    }
+                }
+                
+                // var url = "<?php //echo base_url('Enquiry/checkEmail')?>"
+                // var postData = $('this').serialize();
+                // $.ajax(
+                // {
+                //     url : url,
+                //     beforeSend: function (request)
+                //     {
+                //     request.setRequestHeader('Content-Type', 'text/html;   charset=utf-8');
+                //     },
+                //     type: "POST",
+                //     data : postData,
+                //     success:function(data, status, xhr) 
+                //     {
+                //         if(status == "success")
+                //         {
+                //             alert(data); 
+                //         // Do something on page
+                //         }
+                //         else
+                //         { 
+                //         // Do something on page
+                //         }
+                //     },
+                // });  
+
+            }                        
         </script>
         <script src="<?php echo base_url('assets/'); ?>js/popper.min.js"></script>
         <script src="<?php echo base_url('assets/'); ?>js/bootstrap.min.js"></script>
