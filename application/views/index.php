@@ -237,7 +237,7 @@
                         <img src="<?php echo base_url('assets/'); ?>img/factory/Bldg.jpg" alt="">
                     </div>
                     <div class="support-img-cap text-center">
-                        <span>1959</span>
+                        <span>1962</span>
                         <p>Since</p>
                     </div>
                 </div>                
