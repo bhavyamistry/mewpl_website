@@ -36,8 +36,7 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                    
                                             
                     </ol>
                     <div class="carousel-inner" role="listbox">
@@ -56,7 +55,7 @@
                             </div> -->
                         </div>
                         <!-- Slide Three - Set the background image for this slide in the line below -->
-                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_3.jpg');background-position: center center;background-size: cover;">
+                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_3.png');background-position: center center;background-size: cover;">
                             <!-- <div class="carousel-caption d-none d-md-block">
                                 <h2 class="display-4">Third Slide</h2>
                                 <p class="lead">This is a description for the third slide.</p>
@@ -68,25 +67,25 @@
                                 <p class="lead">This is a description for the third slide.</p>
                             </div> -->
                         </div>
-                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_5.jpg');background-position: center center;background-size: cover;">
+                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_5.png');background-position: center center;background-size: cover;">
                             <!-- <div class="carousel-caption d-none d-md-block">
                                 <h2 class="display-4">Third Slide</h2>
                                 <p class="lead">This is a description for the third slide.</p>
                             </div> -->
                         </div>
-                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_6.jpg');background-position: center center;background-size: cover;">
+                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_6.png');background-position: center center;background-size: cover;">
                             <!-- <div class="carousel-caption d-none d-md-block">
                                 <h2 class="display-4">Third Slide</h2>
                                 <p class="lead">This is a description for the third slide.</p>
                             </div> -->
                         </div>
-                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_7.png');background-position: center center;background-size: cover;">
+                        <!-- <div class="carousel-item" style="background-image: url('<?php //echo base_url('assets/')?>img/hero/trial_7.png');background-position: center center;background-size: cover;"> -->
                             <!-- <div class="carousel-caption d-none d-md-block">
                                 <h2 class="display-4">Third Slide</h2>
                                 <p class="lead">This is a description for the third slide.</p>
                             </div> -->
                         </div>
-                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_8.png');background-position: center center;background-size: cover;">
+                        <!-- <div class="carousel-item" style="background-image: url('<?php //echo base_url('assets/')?>img/hero/trial_8.png');background-position: center center;background-size: cover;"> -->
                             <!-- <div class="carousel-caption d-none d-md-block">
                                 <h2 class="display-4">Third Slide</h2>
                                 <p class="lead">This is a description for the third slide.</p>
