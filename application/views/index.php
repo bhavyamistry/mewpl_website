@@ -42,7 +42,7 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                     <!-- Slide One - Set the background image for this slide in the line below -->
-                        <div class="carousel-item active" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_1.jpg');background-position: center center;background-size: cover;">
+                        <div class="carousel-item active" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_1.png');background-position: center center;background-size: 100% auto;">
                             <!-- <div class="carousel-caption d-none d-md-block">
                                 <h2 class="display-4">First Slide</h2>
                                 <p class="lead">This is a description for the first slide.</p>
@@ -259,21 +259,22 @@
                                 <span class="back-text">Products</span>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <!-- <div class="col-lg-8">
                             <div class="properties__button">
-                                <!--Nav Button  -->
+                                Nav Button 
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">All </a>
                                         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">General</a>
+                                        <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-last" aria-selected="false">Gate-Globe-Check</a>
+                                        <a class="nav-item nav-link" id="nav-butterfly" data-toggle="tab" href="#nav-butterfly" role="tab" aria-controls="nav-butterfly" aria-selected="false">Butterfly</a>
                                         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Special</a>
-                                        <a class="nav-item nav-link" id="nav-last-tab" data-toggle="tab" href="#nav-last" role="tab" aria-controls="nav-contact" aria-selected="false">Gate-Globe-Check</a>
-                                        <a class="nav-item nav-link" id="nav-technology" data-toggle="tab" href="#nav-techno" role="tab" aria-controls="nav-contact" aria-selected="false">Automation</a>
+                                        <a class="nav-item nav-link" id="nav-technology" data-toggle="tab" href="#nav-techno" role="tab" aria-controls="nav-tecno" aria-selected="false">Automation</a>
                                     </div>
                                 </nav>
-                                <!--End Nav Button  -->
+                                End Nav Button 
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="row">
@@ -298,22 +299,33 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_valves.png" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/check_valves.png" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="<?php echo base_url('products/Special_purpose'); ?>" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="<?php echo base_url('sub_products/Special_purpose'); ?>">Special Purpose Ball Valves</a></h4>                                                    
+                                                    <a href="<?php echo base_url('products/Gate_globe_check'); ?>" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('products/Gate_globe_check'); ?>">Gate, Globe, Lift & Swing Check Valve</a></h4>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/check_valves.png" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/butterfly_valves_img.png" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="<?php echo base_url('products/Gate_globe_check'); ?>" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="<?php echo base_url('products/Gate_globe_check'); ?>">Gate, Globe, Lift & Swing Check Valve</a></h4>
+                                                    <a href="<?php echo base_url('products/Butterfly'); ?>" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('products/Butterfly'); ?>">Butterfly Valves</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-project mb-30">
+                                                <div class="project-img">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_valves.png" alt="">
+                                                </div>
+                                                <div class="project-cap">
+                                                    <a href="<?php echo base_url('products/Special_purpose'); ?>" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('sub_products/Special_purpose'); ?>">Special Purpose Ball Valves</a></h4>                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -327,12 +339,12 @@
                                                     <h4><a href="<?php echo base_url('products/Valve_automation'); ?>">Valve Automation Systems</a></h4>
                                                 </div>
                                             </div>
-                                        </div>                                    
+                                        </div>                                                                      
                                     </div>
                                 </div>
                             </div>
                             <!-- Card TWO -->
-                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <!-- <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                 <div class="project-caption">
                                     <div class="row">
                                         <div class="col-lg-4 col-md-6">
@@ -349,7 +361,7 @@
                                         <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/general_purpose/gp_single_flange.jpg" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/general_purpose/gp_single_flange.png" alt="">
                                                 </div>
                                                 <div class="project-cap">
                                                     <a href="<?php echo base_url('sub_products/Sub_general'); ?>?product=2" class="plus-btn"><i class="ti-plus"></i></a>
@@ -386,40 +398,40 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Card THREE -->
+                            Card THREE
                             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                                 <div class="project-caption">
                                     <div class="row">
                                         <div class="col-lg-4 col-md-4">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_jacket.png" alt="" >
+                                                    <img src="<?php //echo base_url('assets/'); ?>img/products/special_purpose/sp_jacket.png" alt="" >
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=1" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=1">Jacketed Ball Valve</a></h4>        
+                                                    <a href="<?php //echo base_url('sub_products/Sub_special'); ?>?product=1" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php //echo base_url('sub_products/Sub_special'); ?>?product=1">Jacketed Ball Valve</a></h4>        
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-md-4">
                                             <div class="single-project mb-30">
                                                 <div class="project-img" style="width: 100%;">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_trunion.png" alt="">
+                                                    <img src="<?php //echo base_url('assets/'); ?>img/products/special_purpose/sp_trunion.png" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=2" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=2">Trunnion Mounted Ball Valve</a></h4>        
+                                                    <a href="<?php //echo base_url('sub_products/Sub_special'); ?>?product=2" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php //echo base_url('sub_products/Sub_special'); ?>?product=2">Trunnion Mounted Ball Valve</a></h4>        
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img" style="width: 100%;">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_extended.png" alt="" style="width:inherit;">
+                                                    <img src="<?php //echo base_url('assets/'); ?>img/products/special_purpose/sp_extended.png" alt="" style="width:inherit;">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=3" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=3">Extended Stem Ball Valve</a></h4>
+                                                    <a href="<?php //echo base_url('sub_products/Sub_special'); ?>?product=3" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php //echo base_url('sub_products/Sub_special'); ?>?product=3">Extended Stem Ball Valve</a></h4>
                                                     
                                                 </div>
                                             </div>
@@ -427,45 +439,40 @@
                                         <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img" style="width: 100%;">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_4seat_flange.png" alt="" style="width:inherit;">
+                                                    <img src="<?php //echo base_url('assets/'); ?>img/products/special_purpose/sp_4seat_flange.png" alt="" style="width:inherit;">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=4" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=4">Three Way Four Seated Threaded & Flanged Ball Valve</a></h4>                                                
+                                                    <a href="<?php //echo base_url('sub_products/Sub_special'); ?>?product=4" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php //echo base_url('sub_products/Sub_special'); ?>?product=4">Three Way Four Seated Threaded & Flanged Ball Valve</a></h4>                                                
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img" style="width: 100%;">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_2seat_flange.png" alt="" style="width:inherit;">
+                                                    <img src="<?php //echo base_url('assets/'); ?>img/products/special_purpose/sp_2seat_flange.png" alt="" style="width:inherit;">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=5" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=5">Three Way Two Seated L Port Flanged Ball Valve</a></h4>                                                    
+                                                    <a href="<?php //echo base_url('sub_products/Sub_special'); ?>?product=5" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php //echo base_url('sub_products/Sub_special'); ?>?product=5">Three Way Two Seated L Port Flanged Ball Valve</a></h4>                                                    
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img" style="width: 100%;">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/special_purpose/sp_flush.png" alt="" style="width:inherit;">
+                                                    <img src="<?php //echo base_url('assets/'); ?>img/products/special_purpose/sp_flush.png" alt="" style="width:inherit;">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=6" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=6">Uni-directional Flush Bottom Ball Valve</a></h4>                                                    
+                                                    <a href="<?php //echo base_url('sub_products/Sub_special'); ?>?product=6" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php //echo base_url('sub_products/Sub_special'); ?>?product=6">Uni-directional Flush Bottom Ball Valve</a></h4>                                                    
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="col-lg-4 col-md-6">
-                                        
-                                        </div> -->
-                                        
-                                        
                                     </div>
                                 </div>
                             </div>
-                            <!-- card FUR -->
+                            card FUR
                             <div class="tab-pane fade" id="nav-last" role="tabpanel" aria-labelledby="nav-last-tab">
                                 <div class="project-caption">
                                     <div class="row">
@@ -542,85 +549,145 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- card FIVE -->
+                            card FIVE
                             <div class="tab-pane fade" id="nav-techno" role="tabpanel" aria-labelledby="nav-technology">
                                 <div class="project-caption">
                                     <div class="row">
-                                        <div class="col-lg-4 col-md-6">
+                                        <div class="col-lg-4 col-md-4">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project1.png" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_ls.png" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
+                                                    <a href="<?php echo base_url().'products/Valve_automation'; ?>" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url().'products/Valve_automation'; ?>" >Limit Switch</a></h4>        
+                                                </div>                                                    
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
+                                        <div class="col-lg-4 col-md-4">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project2.png" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_pneumatic.png" alt="">
                                                 </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
+                                                <div class="project-cap" id="pro_cap2">
+                                                    <a href="<?php echo base_url().'products/Valve_automation'; ?>" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url().'products/Valve_automation'; ?>">Pneumatic Actuators</a></h4>
+                                                </div>                                                    
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
+                                        <div class="col-lg-4 col-md-4">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project3.png" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_electric.jpg" alt="">
                                                 </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
+                                                <div class="project-cap" id="pro_cap3">
+                                                    <a href="<?php echo base_url().'products/Valve_automation'; ?>" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url().'products/Valve_automation'; ?>">Electric Actuators</a></h4>        
+                                                </div>                                                    
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
+                                        <div class="col-lg-4 col-md-4">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project4.png" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_solenoid.png" alt="">
                                                 </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
+                                                <div class="project-cap" id="pro_cap4">
+                                                    <a href="<?php echo base_url().'products/Valve_automation'; ?>" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url().'products/Valve_automation'; ?>">Solenoid Valve</a></h4>
+                                                </div>                                                    
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
+                                        <div class="col-lg-4 col-md-4">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project5.png" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_manual_overide.png" alt="">
                                                 </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
+                                                <div class="project-cap" id="pro_cap5">
+                                                    <a href="<?php echo base_url().'products/Valve_automation'; ?>" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a id="<?php echo base_url().'products/Valve_automation'; ?>" >Manual Override</a></h4>        
+                                                </div>                                                    
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
+                                        <div class="col-lg-4 col-md-4">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project6.png" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_mvls.png" alt="">
                                                 </div>
                                                 <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
+                                                    <a href="<?php echo base_url().'products/Valve_automation'; ?>" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url().'products/Valve_automation'; ?>">Manual Valve with Limit Switch (MVLS)</a></h4>        
+                                                </div>                                                    
                                             </div>
                                         </div>
+                                        <div class="col-lg-12 col-md-12">
+                                            <a href="<?php echo base_url().'products/Valve_automation'; ?>"><button class="btn red-btn2" id="read-more">View More</button></a>                                        
+                                        </div> 
                                     </div>
                                 </div>
                             </div>
+                            card SIX
+                            <div class="tab-pane fade" id="nav-butterfly" role="tabpanel" aria-labelledby="nav-butterfly" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="project-caption">
+                                    <div class="row">
+                                    <div class="col-lg-4 col-md-4">
+                                            <div class="single-project mb-30">
+                                                <div class="project-img">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/butterfly_valves/Centric_0.png" alt="">
+                                                </div>
+                                                <div class="project-cap">
+                                                    <a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=1" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=1">Wafer Type Butter Fly Valve (Centric)</a></h4>        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="single-project mb-30">
+                                                <div class="project-img">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/butterfly_valves/Eccentric_4.png" alt="">
+                                                </div>
+                                                <div class="project-cap">
+                                                    <a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=2" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=2">Wafer Type Butter Fly Valve (Ecentric)</a></h4>                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="single-project mb-30">
+                                                <div class="project-img">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/butterfly_valves/Lugtype_3.jpg" alt="">
+                                                </div>
+                                                <div class="project-cap">
+                                                    <a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=3" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=3">Lug Type Butter Fly Valve</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="single-project mb-30">
+                                                <div class="project-img">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/butterfly_valves/db_flanged_centric.jpg" alt="">
+                                                </div>
+                                                <div class="project-cap">
+                                                    <a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=4" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=4">Double Flanged Butterfly Valve (Centric)</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="single-project mb-30">
+                                                <div class="project-img">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/butterfly_valves/db_flangedEccentric.jpg" alt="">
+                                                </div>
+                                                <div class="project-cap">
+                                                    <a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=5" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=5">Double Flanged Butterfly Valve (Ecentric)</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>                               
+                                    </div>
+                                </div>
+                            </div> -->
+                            
                         </div>
                         <!-- End Nav Card -->
                     </div>

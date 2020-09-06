@@ -362,6 +362,7 @@
                                                 </div>                                                                                            
                                             <?php }?>
                                         </div>
+                                        
                                     </div>
                                     <?php if($product==1){?>
                                         <div style="padding:20px;"><h4>Extended Stem Available to suit Insulation / puffing on request</h4></div>
@@ -375,9 +376,51 @@
 
                                     <?php } else if($product==6){?>
                                     <?php }?>
+                                    <button href="#" class="btn" data-toggle="modal" data-target="#popUpWindow">Enquire</button>
                                     
                                 </div>
 
+                            </div>
+                        </div>
+                        <div class="modal fade" id="popUpWindow">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <!-- header -->
+                                    <div class="modal-header" style="width: 100%;">
+                                        <h3 class="modal-title" style="width: 95%;">Enquiry Form</h3>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <!-- body -->
+                                    <div class="modal-header">
+                                        <form role="form" style="width:100%;" action="<?php echo base_url()?>Enquiry/sendSingleEnquiry" id="myform" method="POST">
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="bname" id="bname" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Company name'" placeholder="Enter your Company name" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="num" id="num" type="text" oninput="numberOnly(this.id);" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your phone number'" placeholder="Enter your phone number" maxlength="10" minlength="10" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="checkEmail();" value="" placeholder="Email" required><span id="error"></span>
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="3" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Requirements'" placeholder=" Enter Requirements"></textarea>
+                                            </div>
+                                            <div  id="wait" class="preloader-wrapper big active" style="display:none;width:30%;height:30%;position:absolute;top:50%;left:50%;padding:2px;">
+                                                <img src="<?php echo base_url('assets')?>/img/logo/Loading.gif" width="100%" height="100%" /><br>
+                                                <h5 class="mt-10">Validating........<h5>    
+                                            </div>
+                                            <div class="modal-footer">
+                                                <input type="submit" class="btn btn-block" value='Submit'>
+                                                <input type="hidden" name="product" id = "product" value="">
+                                                <input type="hidden" name="sub_pro" id="sub_pro" value="">
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>                        
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -692,6 +735,18 @@
         $(document).ready(function () {
             // alert("Hello Frends chai peelo");            
             // alert(param);
+            $(document).ajaxStart(function(){
+                $("#wait").show();
+            });
+            $(document).ajaxComplete(function(){
+                $("#wait").hide();
+            });
+
+            $('#myform').submit(function() {
+                $('#sub_pro').val("<?php echo $product_name;?>");
+                $('#product').val('General Purpose');
+                alert($('#sub_pro').val());
+            });
             if(param!='6')
             {
                 div_design.show();
@@ -791,7 +846,74 @@
 
                 });
         });
-        
+
+        function numberOnly(id) {
+            // Get element by id which passed as parameter within HTML element event
+            var element = document.getElementById(id);
+            // Use numbers only pattern, from 0 to 9
+            var regex = /[^0-9]/gi;
+            // This removes any other character but numbers as entered by user
+            element.value = element.value.replace(regex, "");
+        }
+        function checkEmail()
+        {
+            // $(this).attr("placeholder", "Type your answer here");
+            
+            $('#email').attr("placeholder","Enter email address");                
+            alert($('#email').val());
+            if($('#email').val() != '')
+            {
+                $('#email').validate();
+                if(!emailReg.test($('#email').val()))
+                {
+                    // alert("Not valid");
+                }
+                else
+                {
+                    // alert("Valid");
+                    var url = "<?php echo base_url('Enquiry/checkEmail')?>";
+                    var email_id = $('#email').val();
+                    var postData = $('#enquiryForm').serialize();
+                    $.ajax(
+                    {
+                        url : url,                            
+                        type: "POST",
+                        data : {"email": email_id},
+                        success:function(data, status) 
+                        {
+                            $("#wait").css("display", "none");
+                            if(status == "success")
+                            {
+                                // alert(data); 
+                                if(data!="true")
+                                {
+                                    // alert("Email Addres Not Valid");
+                                    $('#email').focus();
+                                    $('#email').css('border','1px solid red');
+                                    var error = document.getElementById("error");
+                                        // Changing content and color of content 
+                                    error.textContent = "Email Address does not Exists!" 
+                                    error.style.color = "red"; 
+                                    exit();
+                                }
+                                else
+                                {
+                                    var error = document.getElementById("error");
+                                    error.textContent = "";
+                                    document.getElementById("email").style.borderColor = "#e5e6e9"; 
+                                    
+                                }
+                            // Do something on page
+                            }
+                            else
+                            { 
+                            // Do something on page
+                            }
+                        },
+                    });  
+                }
+            }
+        }  
     </script>
     <script>
         /* Initiate Magnify Function

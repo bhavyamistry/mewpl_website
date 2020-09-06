@@ -33,7 +33,7 @@
                                 <div class="front-text">
                                     <h3 class="">Valve Automation Systems</h3>
                                 </div>
-                                <span class="back-text">Gellary</span>
+                                <span class="back-text">Products</span>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="pro_div1">
                     <div class="col-12">
                         <!-- Nav Card -->
                         <div class="tab-content active" id="nav-tabContent">
@@ -58,367 +58,106 @@
                             <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                                 <div class="project-caption">
                                     <div class="row">
-                                        <div class="col-lg-6 col-md-6">
+                                        <div class="col-lg-4 col-md-4" id="pro_div1">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_pneumatic.jpg" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_ls.png" alt="">
                                                 </div>
-                                                <div class="project-cap">
-                                                    <a href="<?php echo base_url('sub_products/Sub_automation'); ?>?product=1" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="<?php echo base_url('sub_products/Sub_automation'); ?>?product=1">Pneumatic Actuation Systems </a></h4>        
+                                                <div class="project-cap" id="pro_cap1">
+                                                    <a id='pro1' class="plus-btn" onclick="todo(1)" style="cursor: pointer;"><i id="pro1_i" class="ti-plus"></i></a>
+                                                    <h4><a id="pro_t1" onclick="todo(1)" style="cursor: pointer;">Limit Switch</a></h4>        
+                                                </div>
+                                                <div id="desc1" class="project-area" style="padding:5%;text-align:left;border-left: 1px solid #00235b;border-right: 1px solid #00235b;border-bottom: 1px solid #00235b;display:none;">
+                                                    <h6>Micro switches and proximity switches Of reputed manufacturers for any typical application. They are generally supplied with suitable Limit Switch boxes of various explosion 8 weather proof classifications.</h6> 
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-md-6">
+                                        <div class="col-lg-4 col-md-4" id="pro_div2">
+                                            <div class="single-project mb-30">
+                                                <div class="project-img">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_pneumatic.png" alt="">
+                                                </div>
+                                                <div class="project-cap" id="pro_cap2">
+                                                    <a id='pro2' class="plus-btn" onclick="todo(2)" style="cursor: pointer;"><i id="pro2_i" class="ti-plus"></i></a>
+                                                    <h4><a id="pro_t2" onclick="todo(2)" style="cursor: pointer;">Pneumatic Actuators</a></h4>
+                                                </div>
+                                                <div id="desc2" class="project-area" style="padding:5%;text-align:left;border-left: 1px solid #00235b;border-right: 1px solid #00235b;border-bottom: 1px solid #00235b;display:none;">
+                                                    <h6>Compact rack Et pinion Pneumatic rotary quarter turn actuators available in double acting Et spring return type actuators. Apart from standard actuators,various special actuators can be offered to suit a wide variety of extreme applications:Half Turn Actuators,3 Position, high temperature, low temperature, offshore, with different operating media, etc.</h6> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4" id="pro_div3">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_electric.jpg" alt="">
                                                 </div>
-                                                <div class="project-cap">
-                                                    <a href="<?php echo base_url('sub_products/Sub_automation'); ?>?product=2" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="<?php echo base_url('sub_products/Sub_automation'); ?>?product=2">Electric Actuation Systems </a></h4>
-                                                    
+                                                <div class="project-cap" id="pro_cap3">
+                                                    <a id='pro3' class="plus-btn" onclick="todo(3)" style="cursor: pointer;"><i id="pro3_i" class="ti-plus"></i></a>
+                                                    <h4><a id="pro_t3" onclick="todo(3)" style="cursor: pointer;">Electric Actuators</a></h4>        
+                                                </div>
+                                                <div id="desc3" class="project-area" style="padding:5%;text-align:left;border-left: 1px solid #00235b;border-right: 1px solid #00235b;border-bottom: 1px solid #00235b;display:none;">
+                                                    <h6>Electric actuators can deliver very high torques coupled with a gear box. They are compact, easy to maintain, and are widely used on large valves which require higher torques. Electric actuators are available in two versions: Weather proof Et Flame proof with in built Limit Switch Et Torque switch with wide range of voltages.</h6> 
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                        <!-- <div class="col-lg-4 col-md-6">
+                                        <div class="col-lg-4 col-md-4" id="pro_div4">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project5.png" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_solenoid.png" alt="">
                                                 </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
+                                                <div class="project-cap" id="pro_cap4">
+                                                    <a id='pro4' class="plus-btn" onclick="todo(4)" style="cursor: pointer;"><i id="pro4_i" class="ti-plus"></i></a>
+                                                    <h4><a id="pro_t4" onclick="todo(4)" style="cursor: pointer;">Solenoid Valve</a></h4>
+                                                </div>
+                                                <div id="desc4" class="project-area" style="padding:5%;text-align:left;border-left: 1px solid #00235b;border-right: 1px solid #00235b;border-bottom: 1px solid #00235b;display:none;">
+                                                    <h6>5/2 or 3/2 way, Solenoid valves of reputed makes-indigenous and imported are offered to meet the pneumatic actuator requirements. They are available in Namur and Non Namur configuration with various voltages in weather proof and Explosion proof Coils.</h6> 
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
+                                        <div class="col-lg-4 col-md-4" id="pro_div5">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project6.png" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_manual_overide.png" alt="">
                                                 </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
+                                                <div class="project-cap" id="pro_cap5">
+                                                    <a id='pro5' class="plus-btn" onclick="todo(5)" style="cursor: pointer;"><i id="pro5_i" class="ti-plus"></i></a>
+                                                    <h4><a id="pro_t5" onclick="todo(5)" style="cursor: pointer;">Manual Override</a></h4>        
                                                 </div>
-                                            </div>
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card TWO -->
-                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                <div class="project-caption">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project5.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
+                                                <div id="desc5" class="project-area" style="padding:5%;text-align:left;border-left: 1px solid #00235b;border-right: 1px solid #00235b;border-bottom: 1px solid #00235b;display:none;">
+                                                    <h6>Gear type de-clutchable Manual Override with handwheel facilitates manual operation of valve in air / power failures to open/close the valve.</h6> 
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
+                                        <div class="col-lg-4 col-md-4" id="pro_div6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project6.png" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_accessory.jpg" alt="">
                                                 </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
+                                                <div class="project-cap" id="pro_cap6">
+                                                    <a id='pro6' class="plus-btn pro6" onclick="todo(6)" style="cursor: pointer;"><i id="pro6_i" class="ti-plus"></i></a>
+                                                    <h4><a id="pro_t6" onclick="todo(6)" style="cursor: pointer;">Other Accessories</a></h4>
+                                                </div>
+                                                <div id="desc6" class="project-area" style="padding:5%;text-align:left;border-left: 1px solid #00235b;border-right: 1px solid #00235b;border-bottom: 1px solid #00235b;display:none;">
+                                                    <ul class="unordered-list">
+                                                        <li><h6>Air filter regulator</h6></li>
+                                                        <li><h6>Flow Control valve</h6></li>
+                                                        <li><h6>Quick Exhaust Valve</h6></li>
+                                                    </ul>
+                                                    <!-- <h6>• Air filter regulator • Flow Control valve • Quick Exhaust Valve </h6>  -->
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6">
+                                        <div class="col-lg-4 col-md-4" id="pro_div7">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project1.png" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/valve_automation/auto_mvls.png" alt="">
                                                 </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
+                                                <div class="project-cap" id="pro_cap7">
+                                                    <a id='pro7' class="plus-btn" onclick="todo(7)" style="cursor: pointer;"><i id="pro7_i" class="ti-plus"></i></a>
+                                                    <h4><a id="pro_t7" onclick="todo(7)" style="cursor: pointer;">Manual Valve with Limit Switch (MVLS) </a></h4>        
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project2.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project3.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project4.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card THREE -->
-                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                <div class="project-caption">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project3.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project4.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project1.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project2.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project5.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project6.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- card FUR -->
-                            <div class="tab-pane fade" id="nav-last" role="tabpanel" aria-labelledby="nav-last-tab">
-                                <div class="project-caption">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project1.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project2.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project3.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project4.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project5.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project6.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- card FIVE -->
-                            <div class="tab-pane fade" id="nav-techno" role="tabpanel" aria-labelledby="nav-technology">
-                                <div class="project-caption">
-                                    <div class="row">
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project1.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project2.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project3.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project4.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project5.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6">
-                                            <div class="single-project mb-30">
-                                                <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/gallery/project6.png" alt="">
-                                                </div>
-                                                <div class="project-cap">
-                                                    <a href="project_details.html" class="plus-btn"><i class="ti-plus"></i></a>
-                                                    <h4><a href="project_details.html">Floride Chemicals</a></h4>
-                                                    <h4><a href="project_details.html">Factory</a></h4>
+                                                <div id="desc7" class="project-area" style="padding:5%;text-align:left;border-left: 1px solid #00235b;border-right: 1px solid #00235b;border-bottom: 1px solid #00235b;display:none;">
+                                                    <h6><b>Valve type :</b> Ball / Butterfly / Plug valves (Metallic And Lined)<br> <b>Limit Switch :</b> Micro switches and proximity switches supplied with suitable Limit Switch boxes of explosion Et weather proof<br> <b>Operator :</b> Hand lever or Gear </h6> 
                                                 </div>
                                             </div>
                                         </div>
@@ -437,7 +176,83 @@
     <!-- All JS Custom Plugins Link Here here -->
     <script src="<?php echo base_url('assets/'); ?>/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->
-    <script src="<?php echo base_url('assets/'); ?>/js/vendor/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url('assets/'); ?>js/vendor/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // alert("Hello Frends chai peelo");            
+            // alert(param);
+            // $(".pro1").click(function(){
+            //     if($('#desc1').css('display')=="none")
+            //     {
+            //         alert("not displaying");
+            //         $(".pro1").css('color','#fff');
+            //         $("#pro_cap1").css('background', '#00235b');
+            //         $('#pro1_i').addClass('ti-minus').removeClass('ti-plus');
+            //     }
+            //     else
+            //     {
+            //         alert("displaying");
+            //         $("#pro_cap1").css('background', '#fafafa');
+            //         $(".pro1").css('color','#0b1c39');
+            //         $('#pro1_i').addClass('ti-plus').removeClass('ti-minus');
+            //     }
+            //     $("#desc1").fadeToggle("slow");
+                
+            //     // $('html, body').animate({
+            //     //     scrollTop: $("#pro_div1").offset().top
+            //     // }, 2000);
+            //     $('html, body').animate({
+            //         scrollTop: $('#desc1')[0].clientHeight
+            //     }, 1000);
+                
+            // });
+
+        });
+        function todo(id)
+        {
+            if($('#desc'+id).css('display')=="none")
+            {
+                $('#desc'+id).show("slow");
+                alert("not displaying");
+                $('#pro_cap'+id).unbind('mouseover');
+                $('#pro_cap'+id).unbind('mouseout');
+                $('#pro_cap'+id).css('background', '#00235b');
+                $('#pro_t'+id).css('color','#fff');
+                $('#pro'+id+'_i').addClass('ti-minus').removeClass('ti-plus');
+            }
+            else
+            {
+                $('#desc'+id).hide("slow");
+                alert("displaying");
+                // if($('#pro_cap'+id).css('background') =='#00235b')
+                // {
+                //     alert("Blue");
+                    
+                // }
+                $('#pro_cap'+id).css('background', '#fafafa');
+                // $('#pro_cap'+id).css('background', '#fafafa');
+                $('#pro_t'+id).css('color','#0b1c39');
+                $('#pro'+id+'_i').addClass('ti-plus').removeClass('ti-minus');
+                $('#pro_cap'+id).mouseover(function () {
+                    $('#pro_cap'+id).css('background', '#00235b');
+                    $('#pro_t'+id).css('color','#fff');
+                });
+                $('#pro_cap'+id).mouseout(function () {
+                    $('#pro_cap'+id).css('background', '#fafafa');
+                    $('#pro_t'+id).css('color','#0b1c39');
+                });
+            }
+            // $('#desc'+id).fadeToggle("slow");
+            
+            
+            $('html, body').animate({
+                scrollTop: $("#pro_div"+id).offset().top - 50
+            }, 2000);
+            // $('html, body').animate({
+            //     scrollTop: $('#desc'+id)[1].clientHeight
+            // }, 1000);
+        }
+    </script>
     <script src="<?php echo base_url('assets/'); ?>/js/popper.min.js"></script>
     <script src="<?php echo base_url('assets/'); ?>/js/bootstrap.min.js"></script>
     <!-- Jquery Mobile Menu -->

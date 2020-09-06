@@ -87,7 +87,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email" required>
+                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="checkEmail();" placeholder="Email" required><span id="error"></span>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -128,21 +128,6 @@
                 </div>
             </div>
         </section>
-        
-        <?php 
-            $_SESSION = [];
-            if (isset($_POST['button_pressed'])) { 
-                session_start();
-                $_SESSION['name'] = $_POST['name'];
-                $_SESSION['bname'] = $_POST['bname'];
-                $_SESSION['message'] = $_POST['message'];
-                $_SESSION['num'] = $_POST['num'];
-                $_SESSION['email'] = $_POST['email'];
-                $_SESSION['subject'] = $_POST['subject'];
-                header('Location: '.base_url().'Contact/sendMail');
-                
-            } 
-        ?> 
     <!-- ================ contact section end ================= -->
     <!-- JS here -->
 	
@@ -159,31 +144,64 @@
                 // This removes any other character but numbers as entered by user
                 element.value = element.value.replace(regex, "");
             }
-            $(document).ready(function(){
-                console.log('<?php echo $_SESSION; ?>');
-                $('#name').val('<?=$_SESSION['name'];?>');
-                $('#bname').val('<?=$_SESSION['bname'];?>');
-                $('#message').val('<?=$_SESSION['message'];?>');
-                $('#num').val('<?=$_SESSION['num'];?>');
-                $('#email').val('<?=$_SESSION['email'];?>');
-                $('#subject').val('<?=$_SESSION['subject'];?>');
-                
-                $('#contactForm').on('submit',function(e) {
-                    $.ajax({
-                        url: <?= base_url().'Contact/sendMail'?>,
-                        data: $(this).serialize(),
-                        dataType: "json",
-                        type: 'POST',
-                        success: function(data) {
-                            console.log(data);
-                             // Display the data on the current screen.
-                            $('#form')[0].reset(); // reset the form so the user doesn't double click and submit the data twice
-                        }
-                    });
-                    e.preventDefault();
-                });
-
-            });            
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            function checkEmail()
+            {
+                // $(this).attr("placeholder", "Type your answer here");
+                $('#email').attr("placeholder","Enter email address");                
+                alert($('#email').val());
+                if($('#email').val() != '')
+                {
+                    $('#email').validate();
+                    if(!emailReg.test($('#email').val()))
+                    {
+                        // alert("Not valid");
+                    }
+                    else
+                    {
+                        // alert("Valid");
+                        var url = "<?php echo base_url('Enquiry/checkEmail')?>";
+                        var email_id = $('#email').val();
+                        var postData = $('#enquiryForm').serialize();
+                        $.ajax(
+                        {
+                            url : url,                            
+                            type: "POST",
+                            data : {"email": email_id},
+                            success:function(data, status) 
+                            {
+                                if(status == "success")
+                                {
+                                    // alert(data); 
+                                    if(data!="true")
+                                    {
+                                        // alert("Email Addres Not Valid");
+                                        $('#email').focus();
+                                        $('#email').css('border','1px solid red');
+                                        var error = document.getElementById("error");
+                                            // Changing content and color of content 
+                                        error.textContent = "Email Address does not Exists!" 
+                                        error.style.color = "red"; 
+                                        exit();
+                                    }
+                                    else
+                                    {
+                                        var error = document.getElementById("error");
+                                        error.textContent = "";
+                                        document.getElementById("email").style.borderColor = "#e5e6e9"; 
+                                        
+                                    }
+                                // Do something on page
+                                }
+                                else
+                                { 
+                                // Do something on page
+                                }
+                            },
+                        });  
+                    }
+                }
+            }         
         </script>
         <script src="<?php echo base_url('assets/'); ?>js/popper.min.js"></script>
         <script src="<?php echo base_url('assets/'); ?>js/bootstrap.min.js"></script>

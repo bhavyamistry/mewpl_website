@@ -93,6 +93,17 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/butterfly_valves_img.png" alt="">
+                                                </div>
+                                                <div class="project-cap">
+                                                    <a href="<?php echo base_url('products/Butterfly'); ?>" class="plus-btn"><i class="ti-plus"></i></a>
+                                                    <h4><a href="<?php echo base_url('products/Butterfly'); ?>">Butterfly Valves</a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="single-project mb-30">
+                                                <div class="project-img">
                                                     <img src="<?php echo base_url('assets/'); ?>img/products/automation_valves.png" alt="">
                                                 </div>
                                                 <div class="project-cap">

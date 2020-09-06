@@ -32,6 +32,143 @@
         <script type="text/javascript">
             //<![CDATA[ 
             // array of possible countries in the same order as they appear in the country selection list 
+            
+            //]]>
+        </script>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <!-- slider Area Start-->
+    <div class="slider-area ">
+        <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="<?php echo base_url('assets/'); ?>img/banner/contact_us.png" style="width:100%;background-size:cover;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap pt-100">
+                            <h2>Product Enquiry</h2>
+                            <nav aria-label="breadcrumb ">
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="<?php echo base_url().'Home'?>">Home</a></li>                                
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider Area End-->
+    <!-- ================ contact section start ================= -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="contact-title">Enquiry</h2>
+                </div>
+                <div class="col-lg-8">
+                    <form class="form-contact contact_form" action="Enquiry/sendEnquiry" method="post" id="enquiryForm">
+                        <div class="row">                                
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="bname" id="bname" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Company name'" placeholder="Enter your Company name" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="num" id="num" type="text" oninput="numberOnly(this.id);" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your phone number'" placeholder="Enter your phone number" maxlength="10" minlength="10" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="checkEmail();" value="" placeholder="Email" required><span id="error"></span>
+                                </div>
+                            </div>
+                            <div class="add-pro" style="width:100%;">
+                                <div class="col-12" id="pro_div1">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <img src="<?php echo base_url('assets/')?>img/products/img_icon.png" alt="" style="width:100%;" id="pro_img1">                                        
+                                        </div>
+                                        <div class="col-sm-4" style="display: grid;align-content: center;">
+                                            <select class="form-control valid" style="width:100%;" id="product1" name="product1" onchange="productChange(this,1);" required>
+                                                <option value="empty" selected disabled hidden>Select Product Category</option>
+                                                <option value="General">General Purpose</option>
+                                                <option value="Special">Special Purpose</option>
+                                                <option value="GGC">Gate, Globe, Lift & Swing Check</option>
+                                            </select>
+                                            <input type="hidden" id="counter" name="counter" value="1">
+                                        </div>
+                                        <div class="col-sm-4" style="display: grid;align-content: center;">
+                                            <select class="form-control valid" style="width:100%;" id="sub_pro1" name="sub_pro1" onchange="setimg(this,1);" required>
+                                                <option value="empty" selected disabled hidden>Select Product</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-1" style="display: grid;align-content: center;">
+                                            <div id="pro_div_but_1" class="plus-btn" style="border-radius: 8px;color:white;background-color:#ffcc2a;padding:25%;" onclick="duplicate(1);">
+                                                <i class="ti-plus"></i>
+                                            </div>
+                                        </div>                                            
+                                    </div>
+                                </div>                                    
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Requirements'" placeholder=" Enter Requirements"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="submit" class="button button-contactForm boxed-btn" value="Send" />
+                            <input type="hidden" name="button_pressed" value="1" />
+                            <input type="hidden" name="div_nos" id="div_nos" value="1," />
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-home"></i></span>
+                        <div class="media-body">
+                            <h3>Mistry Ind. Estate,I. B. Patel Road, Goregaon (East)</h3>
+                            <p>,Mumbai- 400063</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                        <div class="media-body">
+                            <h3>91-22-26859960 / 42523200</h3>
+                            <p>Mon to Fri 9am to 5pm</p>
+                        </div>
+                    </div>
+                    <div class="media contact-info">
+                        <span class="contact-info__icon"><i class="ti-email"></i></span>
+                        <div class="media-body">
+                            <h3>sales@saturnvalves.com / info@saturnvalves.com</h3>
+                            <p>Send us your Enqueries anytime!</p>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ contact section end ================= -->
+    <!-- JS here -->
+	
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="<?php echo base_url('assets/'); ?>js/vendor/modernizr-3.5.0.min.js"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+        <script type="text/javascript">
+            
+        </script>
+		<script type="text/javascript" src="<?php echo base_url('assets/'); ?>js/vendor/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript"> 
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
             var products = new Array(3);
             products["General"] = [
                 {"name":"Select Product","selected":"0"},
@@ -107,6 +244,8 @@
             function duplicate(cnt) {
                 var pro = document.getElementById("product"+cnt).value;
                 var sub = document.getElementById("sub_pro"+cnt).value;
+                var nos = document.getElementById("div_nos").value;
+                
                 alert(pro+" "+sub);
                 if(pro == "empty")
                 {
@@ -119,6 +258,8 @@
                 else
                 {
                     var counter = document.getElementById("counter").value;
+                    $('#div_nos').val($('#div_nos').val()+(cnt+1)+",");
+                    alert($('#div_nos').val());
                     // alert(counter);
                     $('#pro_div_but_'+counter).css("visibility", "hidden");
                     var original = document.getElementById("pro_div" + counter);
@@ -142,9 +283,9 @@
                 var path="";
                 var pro = document.getElementById("product"+ind).value;
                 const objIndex = products[pro].findIndex(obj => obj.name == sel.value);
-                // alert(objIndex);
-                // alert(products["General"][objIndex].name);
-                if(sel.value == products["General"][objIndex].name)
+                alert(objIndex);
+                alert(products[pro][objIndex].name);
+                if(pro == "General")
                 {
                     if(objIndex==1) {
                         path="general_purpose/gp_screwed.jpg";
@@ -159,7 +300,7 @@
                         path="general_purpose/gp_three_side.jpg";
                     }
                 }
-                else if(sel.value == products["Special"][objIndex].name)
+                else if(pro == "Special")
                 {
                     if(objIndex==1) {
                         path="special_purpose/sp_jacket.png";
@@ -180,7 +321,7 @@
                         path="special_purpose/sp_flush.png";
                     }                   
                 }
-                else if(sel.value == products["GGC"][objIndex].name)
+                else if(pro == "GGC")
                 {
                     if(objIndex==1) {
                         path="check_valve/ch_gate.jpg";
@@ -213,6 +354,12 @@
             function remove_duplicate(cnt) {
                 var pro = document.getElementById("product"+cnt).value;
                 var sub = document.getElementById("sub_pro"+cnt).value;
+                var nos = $('#div_nos').val();
+                var nos_arr = nos.split(',');
+                console.log(nos_arr);
+                nos_arr.splice(nos_arr.indexOf(cnt.toString()),1);
+                console.log(nos_arr);
+                $('#div_nos').val(nos_arr);
                 var counter = cnt;
                 // alert("remove"+counter);
                 $('#pro_div'+counter).remove();
@@ -223,195 +370,6 @@
                 // alert("Index:"+objIndex);                    
                 products[pro][objIndex].selected = "0";
             }
-            //]]>
-        </script>
-</head>
-
-<body>
-
-    <!-- Preloader Start -->
-    <!-- slider Area Start-->
-    <div class="slider-area ">
-        <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="<?php echo base_url('assets/'); ?>img/banner/contact_us.png" style="width:100%;background-size:cover;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="hero-cap pt-100">
-                            <h2>Product Enquiry</h2>
-                            <nav aria-label="breadcrumb ">
-                                <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="<?php echo base_url().'Home'?>">Home</a></li>                                
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider Area End-->
-    <!-- ================ contact section start ================= -->
-    <section class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-8">
-                    <h2 class="contact-title">Enquiry</h2>
-                </div>
-                <div class="col-lg-8">
-                    <form class="form-contact contact_form" method="post" id="enquiryForm">
-                        <div class="row">                                
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input class="form-control valid" name="bname" id="bname" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Company name'" placeholder="Enter your Company name" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input class="form-control valid" name="num" id="num" type="text" oninput="numberOnly(this.id);" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your phone number'" placeholder="Enter your phone number" maxlength="10" minlength="10" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="checkEmail();" value="" placeholder="Email" required>
-                                </div>
-                            </div>
-                            <div class="add-pro" style="width:100%;">
-                                <div class="col-12" id="pro_div1">
-                                    <div class="row">
-                                        <div class="col-sm-2">
-                                            <img src="<?php echo base_url('assets/')?>img/products/img_icon.png" alt="" style="width:100%;" id="pro_img1">                                        
-                                        </div>
-                                        <div class="col-sm-4" style="display: grid;align-content: center;">
-                                            <select class="form-control valid" style="width:100%;" id="product1" name="product1" onchange="productChange(this,1);" required>
-                                                <option value="empty" selected disabled hidden>Select Product Category</option>
-                                                <option value="General">General Purpose</option>
-                                                <option value="Special">Special Purpose</option>
-                                                <option value="GGC">Gate, Globe, Lift & Swing Check</option>
-                                            </select>
-                                            <input type="hidden" id="counter" name="counter" value="1">
-                                        </div>
-                                        <div class="col-sm-4" style="display: grid;align-content: center;">
-                                            <select class="form-control valid" style="width:100%;" id="sub_pro1" name="sub_pro1" onchange="setimg(this,1);" required>
-                                                <option value="empty" selected disabled hidden>Select Product</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-1" style="display: grid;align-content: center;">
-                                            <div id="pro_div_but_1" class="plus-btn" style="border-radius: 8px;color:white;background-color:#ffcc2a;padding:25%;" onclick="duplicate(1);">
-                                                <i class="ti-plus"></i>
-                                            </div>
-                                        </div>                                            
-                                    </div>
-                                </div>                                    
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Requirements'" placeholder=" Enter Requirements"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group mt-3">
-                            <input type="submit" class="button button-contactForm boxed-btn" value="Send" />
-                            <input type="hidden" name="button_pressed" value="1" />
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-3 offset-lg-1">
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-home"></i></span>
-                        <div class="media-body">
-                            <h3>Mistry Ind. Estate,I. B. Patel Road, Goregaon (East)</h3>
-                            <p>,Mumbai- 400063</p>
-                        </div>
-                    </div>
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                        <div class="media-body">
-                            <h3>91-22-26859960 / 42523200</h3>
-                            <p>Mon to Fri 9am to 5pm</p>
-                        </div>
-                    </div>
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-email"></i></span>
-                        <div class="media-body">
-                            <h3>sales@saturnvalves.com / info@saturnvalves.com</h3>
-                            <p>Send us your Enqueries anytime!</p>
-                        </div>
-                    </div>                        
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ================ contact section end ================= -->
-    <!-- JS here -->
-	
-		<!-- All JS Custom Plugins Link Here here -->
-        <script src="<?php echo base_url('assets/'); ?>js/vendor/modernizr-3.5.0.min.js"></script>
-		<!-- Jquery, Popper, Bootstrap -->
-        <script type="text/javascript">
-            
-        </script>
-		<script type="text/javascript" src="<?php echo base_url('assets/'); ?>js/vendor/jquery-1.12.4.min.js"></script>
-        <script type="text/javascript"> 
-            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-            $(document).ready(function() {
-
-                (function($) {
-                    "use strict";
-
-
-                    // validate contactForm form
-                    $(function() {
-                        $('#inquiryForm').validate({
-                            rules: {
-                                email: {
-                                    required: true,
-                                    email: true,
-                                    email_exits: true
-                                },
-                            },
-                            messages: {
-                                
-                                email: {
-                                    required: "no email, no message",
-                                    email_exists: "No Email Id Exists"
-                                }
-                                
-                            },
-                            submitHandler: function(form) {
-                                $(form).ajaxSubmit({
-                                    type: "POST",
-                                    data: $(form).serialize(),
-                                    url: "Contact/sendMail",
-                                    success: function() {
-                                        $('#contactForm :input').attr('disabled', 'disabled');
-                                        $('#contactForm').fadeTo("slow", 1, function() {
-                                            $(this).find(':input').attr('disabled', 'disabled');
-                                            $(this).find('label').css('cursor', 'default');
-                                            $('#success').fadeIn()
-                                            $('.modal').modal('hide');
-                                            $('#success').modal('show');
-                                        })
-                                    },
-                                    error: function() {
-                                        $('#contactForm').fadeTo("slow", 1, function() {
-                                            $('#error').fadeIn()
-                                            $('.modal').modal('hide');
-                                            $('#error').modal('show');
-                                        })
-                                    }
-                                })
-                            }
-                        })
-                    })
-
-                })(jQuery)
-            });
-            
             function numberOnly(id) {
                 // Get element by id which passed as parameter within HTML element event
                 var element = document.getElementById(id);
@@ -432,11 +390,11 @@
                     $('#email').validate();
                     if(!emailReg.test($('#email').val()))
                     {
-                        alert("Not valid");
+                        // alert("Not valid");
                     }
                     else
                     {
-                        alert("Valid");
+                        // alert("Valid");
                         var url = "<?php echo base_url('Enquiry/checkEmail')?>";
                         var email_id = $('#email').val();
                         var postData = $('#enquiryForm').serialize();
@@ -445,18 +403,28 @@
                             url : url,                            
                             type: "POST",
                             data : {"email": email_id},
-                            success:function(data, status, xhr) 
+                            success:function(data, status) 
                             {
                                 if(status == "success")
                                 {
-                                    alert(data); 
+                                    // alert(data); 
                                     if(data!="true")
                                     {
-                                        $.validator.addMethod("oneormorechecked", function(value, element) {
-                                            return $('input[name="' + element.name + '"]:checked').length > 0;
-                                        }, "Atleast 1 must be selected");
-
-                                        $('.validate').validate();
+                                        // alert("Email Addres Not Valid");
+                                        $('#email').focus();
+                                        $('#email').css('border','1px solid red');
+                                        var error = document.getElementById("error");
+                                            // Changing content and color of content 
+                                        error.textContent = "Email Address does not Exists!" 
+                                        error.style.color = "red"; 
+                                        exit();
+                                    }
+                                    else
+                                    {
+                                        var error = document.getElementById("error");
+                                        error.textContent = "";
+                                        document.getElementById("email").style.borderColor = "#e5e6e9"; 
+                                        
                                     }
                                 // Do something on page
                                 }
@@ -468,31 +436,6 @@
                         });  
                     }
                 }
-                
-                // var url = "<?php //echo base_url('Enquiry/checkEmail')?>"
-                // var postData = $('this').serialize();
-                // $.ajax(
-                // {
-                //     url : url,
-                //     beforeSend: function (request)
-                //     {
-                //     request.setRequestHeader('Content-Type', 'text/html;   charset=utf-8');
-                //     },
-                //     type: "POST",
-                //     data : postData,
-                //     success:function(data, status, xhr) 
-                //     {
-                //         if(status == "success")
-                //         {
-                //             alert(data); 
-                //         // Do something on page
-                //         }
-                //         else
-                //         { 
-                //         // Do something on page
-                //         }
-                //     },
-                // });  
 
             }                        
         </script>

@@ -19,7 +19,7 @@
     {
         $product_name = 'Single Piece, Split Body, Regular Bore, Side Entry, Flange End Ball Valve';
         $product_det = array("name"=>"Single Piece, Split Body, Regular Bore, Side Entry, Flange End Ball Valve",
-        "img"=>"img/sub_products/sub_gen_single_flange.jpg",
+        "img"=>"img/sub_products/sub_gen_single_flange.png",
         "desc"=>"Compact and suitable for eliminating external joint leakage to the atmosphere where applications are highly critical,media is expensive, toxic and external joint leakage is not acceptable.",
         "size"=>"8-50 mm 1/4″ to 2″",
         );
@@ -161,7 +161,52 @@
                                 </div>
                                 <div class="col-md-8" style="height:45%">
                                     <blockquote class="generic-blockquote" style="text-align: initial;"><h5><?php echo $product_det['desc'];?><h5></blockquote>
+                                        <div class="col-md-2" style="margim-top:5%;">
+                                            <button href="#" class="btn" data-toggle="modal" data-target="#popUpWindow">Enquire</button>
+                                        </div>
                                 </div>
+                                <div class="modal fade" id="popUpWindow">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- header -->
+                                            <div class="modal-header" style="width: 100%;">
+                                                <h3 class="modal-title" style="width: 95%;">Enquiry Form</h3>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <!-- body -->
+                                            <div class="modal-header">
+                                                <form role="form" style="width:100%;" action="<?php echo base_url()?>Enquiry/sendSingleEnquiry" id="myform" method="POST">
+                                                    <div class="form-group">
+                                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input class="form-control valid" name="bname" id="bname" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Company name'" placeholder="Enter your Company name" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input class="form-control valid" name="num" id="num" type="text" oninput="numberOnly(this.id);" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your phone number'" placeholder="Enter your phone number" maxlength="10" minlength="10" required>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="checkEmail();" value="" placeholder="Email" required><span id="error"></span>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="3" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Requirements'" placeholder=" Enter Requirements"></textarea>
+                                                    </div>
+                                                    <div  id="wait" class="preloader-wrapper big active" style="display:none;width:30%;height:30%;position:absolute;top:50%;left:50%;padding:2px;">
+                                                        <img src="<?php echo base_url('assets')?>/img/logo/Loading.gif" width="100%" height="100%" /><br>
+                                                        <h5 class="mt-10">Validating........<h5>    
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <input type="submit" class="btn btn-block" value='Submit'>
+                                                        <input type="hidden" name="product" id = "product" value="">
+                                                        <input type="hidden" name="sub_pro" id="sub_pro" value="">
+                                                    </div>
+                                                    
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                         <div class="section-top-border" style="padding:inherit;">
@@ -617,6 +662,7 @@
   <!-- JS here -->
   <script type="text/javascript" src="<?php echo base_url('assets/'); ?>js/vendor/jquery-1.12.4.min.js"></script>
     <script type="text/javascript">
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         var div_design = $('#design_div<?php echo $product;?>');
         var div_service = $('#service_div<?php echo $product;?>');
         var div_standard = $('#standard_div<?php echo $product;?>');
@@ -629,6 +675,19 @@
 
         $(document).ready(function () {
             // alert("Hello Frends chai peelo");            
+            $(document).ajaxStart(function(){
+                $("#wait").show();
+            });
+            $(document).ajaxComplete(function(){
+                $("#wait").hide();
+            });
+
+            $('#myform').submit(function() {
+                $('#sub_pro').val("<?php echo $product_name;?>");
+                $('#product').val('General Purpose');
+                alert($('#sub_pro').val());
+            });
+            
             div_design.show();
             design.css("background-color", "#FFCC2A ");
             design.click(function () {
@@ -716,6 +775,73 @@
 
                 });
         });
+        function numberOnly(id) {
+            // Get element by id which passed as parameter within HTML element event
+            var element = document.getElementById(id);
+            // Use numbers only pattern, from 0 to 9
+            var regex = /[^0-9]/gi;
+            // This removes any other character but numbers as entered by user
+            element.value = element.value.replace(regex, "");
+        }
+        function checkEmail()
+        {
+            // $(this).attr("placeholder", "Type your answer here");
+            
+            $('#email').attr("placeholder","Enter email address");                
+            alert($('#email').val());
+            if($('#email').val() != '')
+            {
+                $('#email').validate();
+                if(!emailReg.test($('#email').val()))
+                {
+                    // alert("Not valid");
+                }
+                else
+                {
+                    // alert("Valid");
+                    var url = "<?php echo base_url('Enquiry/checkEmail')?>";
+                    var email_id = $('#email').val();
+                    var postData = $('#enquiryForm').serialize();
+                    $.ajax(
+                    {
+                        url : url,                            
+                        type: "POST",
+                        data : {"email": email_id},
+                        success:function(data, status) 
+                        {
+                            $("#wait").css("display", "none");
+                            if(status == "success")
+                            {
+                                // alert(data); 
+                                if(data!="true")
+                                {
+                                    // alert("Email Addres Not Valid");
+                                    $('#email').focus();
+                                    $('#email').css('border','1px solid red');
+                                    var error = document.getElementById("error");
+                                        // Changing content and color of content 
+                                    error.textContent = "Email Address does not Exists!" 
+                                    error.style.color = "red"; 
+                                    exit();
+                                }
+                                else
+                                {
+                                    var error = document.getElementById("error");
+                                    error.textContent = "";
+                                    document.getElementById("email").style.borderColor = "#e5e6e9"; 
+                                    
+                                }
+                            // Do something on page
+                            }
+                            else
+                            { 
+                            // Do something on page
+                            }
+                        },
+                    });  
+                }
+            }
+        }    
         
     </script>
     <script>

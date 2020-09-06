@@ -16,7 +16,7 @@
     <!-- Preloader Start -->
     <header>
         <!-- Header Start -->
-        <div class="header-area header-transparent">
+        <div class="header-area header-transparent" id="head" >
             <div class="main-header ">
                 <div class="header-top d-none d-lg-block">
                     <div class="container-fluid">
@@ -67,31 +67,56 @@
                                             </li>
                                             <li><a href="<?php echo base_url().'products/All_products'; ?>">Products</a>
                                                 <ul class="submenu">
-                                                    <li><a tabindex="1" href="<?php echo base_url().'products/General_purpose'; ?>">General Purpose Ball Valve</a>
+                                                    <li><a tabindex="1" href="<?php echo base_url('products/Butterfly'); ?>">Butterfly Valves</a>
                                                         <ul class="submenu" style="left:100%;top:0;margin-top: -1px;margin-left:5px;">
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body Threaded End</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Single Piece Flange End</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Two Piece Flange End</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Three Piece Thread, SW , Flange End</a></li>
+                                                            <li><a href="#">Wafer Type Butterfly Valve</a>
+                                                                <ul class="submenu" style="left:100%;top:0;margin-top: -1px;margin-left:5px;">
+                                                                    <li><a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=1">Centric</a></li>
+                                                                    <li><a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=2">Ecentric</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=3">Lug Type Butterfly Valve</a></li>
+                                                            <li><a href="#">Double Flanged Butterfly Valve</a>
+                                                                <ul class="submenu" style="left:100%;top:0;margin-top: -1px;margin-left:5px;">
+                                                                    <li><a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=4">Centric</a></li>
+                                                                    <li><a href="<?php echo base_url().'sub_products/Sub_Butterfly'; ?>?product=5">Ecentric</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="<?php echo base_url().'products/Sub_Butterfly'; ?>?product=6">Double Flanged Fabricated Butterfly Valve (offset)</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="<?php echo base_url().'products/Special_purpose'; ?>">Special Purpose Ball Valve</a>
+                                                    <li><a tabindex="2" href="<?php echo base_url().'products/General_purpose'; ?>">General Purpose Ball Valve</a>
                                                         <ul class="submenu" style="left:100%;top:0;margin-top: -1px;margin-left:5px;">
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body Threaded End</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Single Piece Flange End</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Two Piece Flange End</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Three Piece Thread, SW , Flange End</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_general'); ?>?product=1">Split Body Threaded End</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_general'); ?>?product=2">Single Piece Flange End</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_general'); ?>?product=3">Two Piece Flange End</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_general'); ?>?product=4">Three Piece Thread, SW , Flange End</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="<?php echo base_url().'products/Gate_globe_check'; ?>">Gate, Globe, Lift & Swing Check Valve</a>
+                                                    <li><a tabindex="3" href="<?php echo base_url().'products/Gate_globe_check'; ?>">Gate, Globe, Lift & Swing Check Valve</a>
                                                         <ul class="submenu" style="left:100%;top:0;margin-top: -1px;margin-left:5px;">
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Split Body Threaded End</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Single Piece Flange End</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Two Piece Flange End</a></li>
-                                                            <li><a href="<?php echo base_url().'products/General_purpose'; ?>">Three Piece Thread, SW , Flange End</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=1">Gate Valve</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=2">Globe Valve</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=3">Swing Check Valve</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=4">Wafer Design Spring Loaded Check Valve</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=5">Wafer Design Swing Check Valve</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=6">Forged: Gate Valve</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=7">Forged: Globe Valve</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_check'); ?>?product=8">Forged: Lift Check Valve</a></li>                                                            
                                                         </ul>
                                                     </li>
-                                                    <li><a href="<?php echo base_url().'products/Valve_automation'; ?>">Valve Automation Systems</a>                                                        
+                                                    <li><a tabindex="4" href="<?php echo base_url().'products/Special_purpose'; ?>">Special Purpose Ball Valve</a>
+                                                        <ul class="submenu" style="left:100%;top:0;margin-top: -1px;margin-left:5px;">
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=1">Jacketed</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=2">Trunnion Mounted</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=3">Extended Stem</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=4">Three Way Four Seated Threaded & Flanged</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=5">Three Way Two Seated L Port Flanged</a></li>
+                                                            <li><a href="<?php echo base_url('sub_products/Sub_special'); ?>?product=6">Uni-directional Flush Bottom</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    
+                                                    <li><a tabindex="5" href="<?php echo base_url().'products/Valve_automation'; ?>">Valve Automation Systems</a>                                                        
                                                     </li>
                                                 </ul>
                                             </li>

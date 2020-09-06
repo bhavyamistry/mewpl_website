@@ -47,6 +47,75 @@
 			}
 			// return json_encode($validate);
 		}
+		public function sendSingleEnquiry()
+		{
+			$name = $this->input->post('name');
+			$bname = $this->input->post('bname');
+			$num = $this->input->post('num');
+			$email = $this->input->post('email');
+			$require = $this->input->post('message');
+			$product = $this->input->post('product');
+			$sub_pro = $this->input->post('sub_pro');
+			print_r("<p>Name:".$name."</p><br>");
+			print_r("<p>bname:".$bname."</p><br>");
+			print_r("<p>num:".$num."</p><br>");
+			print_r("<p>email:".$email."</p><br>");
+			print_r("<p>message:".$require."</p><br>");
+			print_r("<p>product:".$product."</p><br>");
+			print_r("<p>subproduct:".$sub_pro."</p><br>");
+			
+		}
+		public function sendEnquiry()
+		{
+			$name = $this->input->post('name');
+			$bname = $this->input->post('bname');
+			$num = $this->input->post('num');
+			$email = $this->input->post('email');
+			$require = $this->input->post('message');
+			$div_nos = $this->input->post('div_nos');
+			$div_arr = explode (",", $div_nos);
+			$products = array();
+			$pro_string = "";
+
+			print_r("<p>Name:".$name."</p><br>");
+			print_r("<p>bname:".$bname."</p><br>");
+			print_r("<p>num:".$num."</p><br>");
+			print_r("<p>email:".$email."</p><br>");
+			print_r("<p>message:".$require."</p><br>");
+			print_r("<p>div_arr:"."</p><br>");
+			for($i=0;$i<count($div_arr);$i++)
+			{
+				if($div_arr[$i]!="")
+				{
+					print_r(gettype(($div_arr[$i])));
+					$row = array();
+					$row['product'] = 	$this->input->post('product'.$div_arr[$i]);
+					$row['sub_pro'] = 	$this->input->post('sub_pro'.$div_arr[$i]);
+					$pro_string = $pro_string."Product : ".$row['product']." Sub-Product :".$row['sub_pro']." \n";
+					array_push($products,$row);
+				}
+			}
+			print_r($products);
+
+			// ini_set("SMTP","ssl:smtp.gmail.com" );
+			// ini_set("smtp_port","465");
+			// ini_set('sendmail_from', 'bhavya.mevada13@gmail.com');  
+			$to = "bhavya.mstry@gmail.com";
+			$from = $this->input->post('email');
+			$name = $this->input->post('name');;
+			$subject = "Enquiry From Website";				
+			$cmessage = "Name : ".$name." \n"."Company Name : ".$bname." \n"."Phone Number : ".$num." \n".$pro_string."Requirements : ".$require." \n"."Date of Enquiry Sent:".date("d-m-Y");
+			// $cmessage = $cmessage.'From :'.$_REQUEST['num'];
+			print_r($cmessage);
+			$headers = "From: $from";
+			$headers = "From: " . $from . "\r\n";
+			$headers .= "Reply-To: ". $from . "\r\n";
+			$headers .= "MIME-Version: 1.0\r\n";
+			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+			// mail($to, $subject, $cmessage, $headers);
+			
+			// redirect(base_url().'Home');
+		}
 
 	}
 ?>
