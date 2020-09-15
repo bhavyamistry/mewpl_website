@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
-<head>
+<head><div id="loadOverlay" style="background-color:grey; position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:2000;"></div>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Saturn Valves</title>
@@ -11,24 +11,33 @@
 
     <!-- CSS here -->
     <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>css/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="<?php //echo base_url('assets/'); ?>css/owl.carousel.min.css"> -->
     <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>css/slicknav.css">
-    <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>css/animate.min.css">
-    <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>css/magnific-popup.css">
+    <!-- <link rel="stylesheet" href="<?php //echo base_url('assets/'); ?>css/animate.min.css"> -->
+    <!-- <link rel="stylesheet" href="<?php //echo base_url('assets/'); ?>css/magnific-popup.css"> -->
     <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>css/fontawesome-all.min.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>css/themify-icons.css">
     <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>css/slick.css">
-    <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>css/nice-select.css">
+    <!-- <link rel="stylesheet" href="<?php //echo base_url('assets/'); ?>css/nice-select.css"> -->
     <link rel="stylesheet" href="<?php echo base_url('assets/'); ?>css/style.css">
-
 </head>
 <body>
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="<?php echo base_url('assets/'); ?>img/logo/loader.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
 
         <!-- slider Area Start-->
-        <div class="slider-area ">
+        <div class="slider-area">
             <div class="slider-active">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top:0%;">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="9000">
                     <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -48,32 +57,32 @@
                             </div> -->
                         </div>
                         <!-- Slide Two - Set the background image for this slide in the line below -->
-                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_2.png');background-position: center center;background-size: cover;">
+                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_2.png');background-position: center center;background-size: 100% auto;">
                             <!-- <div class="carousel-caption d-none d-md-block">
                                     <h2 class="display-4">Second Slide</h2>
                                     <p class="lead">This is a description for the second slide.</p>
                             </div> -->
                         </div>
                         <!-- Slide Three - Set the background image for this slide in the line below -->
-                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_3.png');background-position: center center;background-size: cover;">
+                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_3.png');background-position: center center;background-size: 100% auto;">
                             <!-- <div class="carousel-caption d-none d-md-block">
                                 <h2 class="display-4">Third Slide</h2>
                                 <p class="lead">This is a description for the third slide.</p>
                             </div> -->
                         </div>
-                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_4.png');background-position: center center;background-size: cover;">
+                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_4.png');background-position: center center;background-size: 100% auto;">
                             <!-- <div class="carousel-caption d-none d-md-block">
                                 <h2 class="display-4">Third Slide</h2>
                                 <p class="lead">This is a description for the third slide.</p>
                             </div> -->
                         </div>
-                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_5.png');background-position: center center;background-size: cover;">
+                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_5.png');background-position: center center;background-size: 100% auto;">
                             <!-- <div class="carousel-caption d-none d-md-block">
                                 <h2 class="display-4">Third Slide</h2>
                                 <p class="lead">This is a description for the third slide.</p>
                             </div> -->
                         </div>
-                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_6.png');background-position: center center;background-size: cover;">
+                        <div class="carousel-item" style="background-image: url('<?php echo base_url('assets/')?>img/hero/trial_6.png');background-position: center center;background-size: 100% auto;">
                             <!-- <div class="carousel-caption d-none d-md-block">
                                 <h2 class="display-4">Third Slide</h2>
                                 <p class="lead">This is a description for the third slide.</p>
@@ -135,7 +144,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="single-service-cap mb-30">
                             <div class="service-img">
-                                <img src="<?php echo base_url('assets/'); ?>img/industries/Metal_Industry.jpg" alt="" style="padding">
+                                <img src="<?php echo base_url('assets/'); ?>img/industries/Metal_Industry.jpg" alt="" >
                             </div>
                             <div class="service-cap">
                                 <h4>Steel & Metal</h4>                                
@@ -212,8 +221,8 @@
                         </div>
                         <span class="back-text">About us</span>
                     </div>
-                    <div class="support-caption" style="padding-right:50px;text-align:left;font-family:Avant Garde;font-size:18px;padding:10%;">
-                        <div class="col-md-12" style="height:45%;">
+                    <div class="support-caption"  style="padding-right:50px;text-align:left;font-family:Avant Garde;font-size:18px;padding:10%;">
+                        <div class="col-md-12">
                             <blockquote class="generic-blockquote" style="text-align: initial;padding: 7%;"><h5>
                             Mevada Engineering Works Pvt. Ltd. (MEWPL) is a leading manufacturer of industrial valves under its registered brand SATURN® for past 5 decades having its manufacturing facility in Mumbai, India staffed by competent engineers and technicians.<br><br>“SATURN”, the brand chooses to stand firm in the Indian and International market with promise, standard and guarantee.     
                             <h5></blockquote>
@@ -1402,8 +1411,22 @@
     <!-- Jquery, Popper, Bootstrap -->
     <script type="text/javascript" src="<?php echo base_url('assets/'); ?>js/vendor/jquery-1.12.4.min.js"></script>
     <script type="text/javascript">  
-
+        $(window).load(function() {
+            $("body").removeClass("preload");
+            var t = performance.timing;
+            console.log(t.loadEventEnd - t.responseEnd);
+            
+            // alert("Ready");
+        });
+        
         // $(document).ready(function () {
+        //     // alert("Hello Frends chai peelo");            
+            
+        // });
+        $(document).ready(function () {
+            // $("#preloader-active").fadeOut(3000);
+            $("#loadOverlay").css("display","none");
+        });
         //     // alert("Hello Frends chai peelo");            
         //     // alert(param);
         //     $('#read-more').click(function () {
@@ -1437,15 +1460,15 @@
     <script src="<?php echo base_url('assets/'); ?>js/slick.min.js"></script>
     
     <!-- Date Picker -->
-    <script src="<?php echo base_url('assets/'); ?>js/gijgo.min.js"></script>
+    <!-- <script src="<?php //echo base_url('assets/'); ?>js/gijgo.min.js"></script> -->
     <!-- One Page, Animated-HeadLin -->
     <script src="<?php echo base_url('assets/'); ?>js/wow.min.js"></script>
-    <script src="<?php echo base_url('assets/'); ?>js/animated.headline.js"></script>
-    <script src="<?php echo base_url('assets/'); ?>js/jquery.magnific-popup.js"></script>
+    <!-- <script src="<?php //echo base_url('assets/'); ?>js/animated.headline.js"></script> -->
+    <!-- <script src="<?php //echo base_url('assets/'); ?>js/jquery.magnific-popup.js"></script> -->
 
     <!-- Scrollup, nice-select, sticky -->
     <script src="<?php echo base_url('assets/'); ?>js/jquery.scrollUp.min.js"></script>
-    <script src="<?php echo base_url('assets/'); ?>js/jquery.nice-select.min.js"></script>
+    <!-- <script src="<?php //echo base_url('assets/'); ?>js/jquery.nice-select.min.js"></script> -->
     <script src="<?php echo base_url('assets/'); ?>js/jquery.sticky.js"></script>
     
 
@@ -1454,10 +1477,11 @@
     <script src="<?php echo base_url('assets/'); ?>js/jquery.counterup.min.js"></script>
 
     <!-- contact js -->
-    <script src="<?php echo base_url('assets/'); ?>js/contact.js"></script>
-    <script src="<?php echo base_url('assets/'); ?>js/jquery.form.js"></script>
+    <!-- <script src="<?php //echo base_url('assets/'); ?>js/contact.js"></script> -->
+    <!-- <script src="<?php //echo base_url('assets/'); ?>js/jquery.form.js"></script> -->
     <script src="<?php echo base_url('assets/'); ?>js/jquery.validate.min.js"></script>
-    <script src="<?php echo base_url('assets/'); ?>js/mail-script.js"></script>
+    <!-- <script src="<?php //echo base_url('assets/'); ?>js/mail-script.js"></script> -->
+
     <script src="<?php echo base_url('assets/'); ?>js/jquery.ajaxchimp.min.js"></script>
 
     <!-- Jquery Plugins, main Jquery -->

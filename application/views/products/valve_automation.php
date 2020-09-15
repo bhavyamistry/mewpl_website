@@ -213,7 +213,7 @@
             if($('#desc'+id).css('display')=="none")
             {
                 $('#desc'+id).show("slow");
-                alert("not displaying");
+                // alert("not displaying");
                 $('#pro_cap'+id).unbind('mouseover');
                 $('#pro_cap'+id).unbind('mouseout');
                 $('#pro_cap'+id).css('background', '#00235b');
@@ -223,7 +223,7 @@
             else
             {
                 $('#desc'+id).hide("slow");
-                alert("displaying");
+                // alert("displaying");
                 // if($('#pro_cap'+id).css('background') =='#00235b')
                 // {
                 //     alert("Blue");

@@ -115,8 +115,8 @@
                     <h3>Valve Testing</h3>
                     <div class="row gallery-item" style="overflow:auto;">
                         <div class="col-md-4">
-                            <a href="<?php echo base_url('assets/'); ?>img/factory/testing_1.jpg" class="img-pop-up">
-                                <div class="single-gallery-image" style="background: url(<?php echo base_url('assets/'); ?>img/factory/testing_1.jpg);"></div>
+                            <a href="<?php echo base_url('assets/'); ?>img/factory/testing_1.png" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(<?php echo base_url('assets/'); ?>img/factory/testing_1.png);"></div>
                             </a>
                         </div>
                         <div class="col-md-4">
@@ -125,8 +125,8 @@
                             </a>
                         </div>
                         <div class="col-md-4">
-                            <a href="<?php echo base_url('assets/'); ?>img/factory/testing_3.jpg" class="img-pop-up">
-                                <div class="single-gallery-image" style="background: url(<?php echo base_url('assets/'); ?>img/factory/testing_3.jpg);"></div>
+                            <a href="<?php echo base_url('assets/'); ?>img/factory/testing_3.png" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(<?php echo base_url('assets/'); ?>img/factory/testing_3.png);"></div>
                             </a>
                         </div>
                         <div class="col-md-6">
@@ -135,8 +135,8 @@
                             </a>
                         </div>
                         <div class="col-md-6">
-                            <a href="<?php echo base_url('assets/'); ?>img/factory/testing_8.jpg" class="img-pop-up">
-                                <div class="single-gallery-image" style="background: url(<?php echo base_url('assets/'); ?>img/factory/testing_8.jpg);"></div>
+                            <a href="<?php echo base_url('assets/'); ?>img/factory/testing_8.png" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(<?php echo base_url('assets/'); ?>img/factory/testing_8.png);"></div>
                             </a>    
                         </div>
                         <div class="col-md-4">
@@ -150,8 +150,8 @@
                             </a>
                         </div>
                         <div class="col-md-4">
-                            <a href="<?php echo base_url('assets/'); ?>img/factory/testing_6.jpg" class="img-pop-up">
-                                <div class="single-gallery-image" style="background: url(<?php echo base_url('assets/'); ?>img/factory/testing_6.jpg);"></div>
+                            <a href="<?php echo base_url('assets/'); ?>img/factory/testing_6.png" class="img-pop-up">
+                                <div class="single-gallery-image" style="background: url(<?php echo base_url('assets/'); ?>img/factory/testing_6.png);"></div>
                             </a>
                         </div>
                         

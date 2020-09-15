@@ -3,7 +3,7 @@
 
 <body>
     <!-- Preloader Start -->
-    <div id="preloader-active">
+    <!-- <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
@@ -12,11 +12,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Preloader Start -->
     <header>
         <!-- Header Start -->
-        <div class="header-area header-transparent" id="head" >
+        <div class="header-area header-transparent" id="head">
             <div class="main-header ">
                 <div class="header-top d-none d-lg-block">
                     <div class="container-fluid">
@@ -60,11 +60,13 @@
                                         <ul id="navigation">
                                             <li><a href="<?php echo base_url().'Home'; ?>">Home</a></li>
                                             <li><a href="<?php echo base_url().'About'; ?>">About Us</a>
+                                            
                                                 <ul class="submenu">
                                                     <li><a href="<?php echo base_url().'About/Certificate'; ?>">Certificates</a></li>
                                                     <li><a href="<?php echo base_url().'About/Quality_Assurance'; ?>">Quality Assurance</a></li>                                                    
                                                 </ul>
                                             </li>
+                                            <li><a href="<?php echo base_url().'Download'; ?>">Download</a></li>
                                             <li><a href="<?php echo base_url().'products/All_products'; ?>">Products</a>
                                                 <ul class="submenu">
                                                     <li><a tabindex="1" href="<?php echo base_url('products/Butterfly'); ?>">Butterfly Valves</a>
@@ -125,7 +127,7 @@
                                                     <li><a href="<?php echo base_url().'Client/Customer_Appraisal'; ?>">Customer Appraisal</a></li>                                                    
                                                 </ul>
                                             
-                                            <li><a href="<?php echo base_url().'Gallery'; ?>">Valve Gallery</a></li></li>
+                                            <li><a href="<?php echo base_url().'Gallery'; ?>">Gallery</a></li></li>
                                             <li><a href="<?php echo base_url().'Contact'; ?>">Contact</a></li>
                                         </ul>
                                     </nav>

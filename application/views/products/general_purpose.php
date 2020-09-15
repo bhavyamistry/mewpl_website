@@ -61,7 +61,7 @@
                                         <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/general_purpose/gp_screwed.jpg" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/general_purpose/gp_screwed.png" alt="">
                                                 </div>
                                                 <div class="project-cap">
                                                     <a href="<?php echo base_url('sub_products/Sub_general'); ?>?product=1" class="plus-btn"><i class="ti-plus"></i></a>
@@ -84,7 +84,7 @@
                                         <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/general_purpose/gp_two_flange.jpg" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/general_purpose/gp_two_flange.png" alt="">
                                                 </div>
                                                 <div class="project-cap">
                                                     <a href="<?php echo base_url('sub_products/Sub_general'); ?>?product=3" class="plus-btn"><i class="ti-plus"></i></a>
@@ -95,7 +95,7 @@
                                         <div class="col-lg-4 col-md-6">
                                             <div class="single-project mb-30">
                                                 <div class="project-img">
-                                                    <img src="<?php echo base_url('assets/'); ?>img/products/general_purpose/gp_three_side.jpg" alt="">
+                                                    <img src="<?php echo base_url('assets/'); ?>img/products/general_purpose/gp_three_side.png" alt="">
                                                 </div>
                                                 <div class="project-cap">
                                                     <a href="<?php echo base_url('sub_products/Sub_general'); ?>?product=4" class="plus-btn"><i class="ti-plus"></i></a>

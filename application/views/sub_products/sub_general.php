@@ -9,7 +9,7 @@
         $product_name = 'Split Body, Full Bore, Side Entry Screwed End Ball Valve';
         $product_ends = array('BSP “II”','NPT');
         $product_det = array("name"=>"Split Body, Full Bore, Side Entry Screwed End Ball Valve",
-        "img"=>"img/sub_products/sub_gen_screwed.jpg",
+        "img"=>"img/sub_products/sub_gen_screwed.png",
         "desc"=>"Compact and suitable for eliminating external joint leakage to the atmosphere where applications are highly critical,media is expensive, toxic and external joint leakage is not acceptable.",
         "size"=>"8-50 mm 1/4″ to 2″",
         "ends" => $product_ends,
@@ -28,7 +28,7 @@
     {
         $product_name = 'Two Piece, Split Body, Side Entry, Flange End Ball Valve';
         $product_det = array("name"=>"Two Piece, Split Body, Side Entry, Flange End Ball Valve",
-        "img"=>"img/sub_products/sub_gen_two_flange.jpg",
+        "img"=>"img/sub_products/sub_gen_two_flange.png",
         "desc"=>"Two-piece design is Ideally suitable for all kind of Process & Utility application with options of full bore & Regular bore, where maintenance of Valves are easy.",
         "size"=>"8-50 mm 1/4″ to 2″",
         );
@@ -37,10 +37,13 @@
     {
         $product_name = 'Three Piece, Split Body, Side Entry Ball Valve';
         $product_det = array("name"=>"Three Piece, Split Body, Side Entry Ball Valve",
-        "img"=>"img/sub_products/sub_gen_three_side.jpg",
+        "img"=>"img/sub_products/sub_gen_three_side.png",
         "desc"=>"Three piece design is well suited for use in piping systems where line breaks are required and total entry into the line is necessary. The center section-body can swing out, eliminating the dismantling of entire valve from pipeline.Note: This is possible only for threaded, socket & butt weld end connections.",
         "size"=>"8-50 mm 1/4″ to 2″",
         );
+    }
+    else{
+        redirect(base_url().'Err404');
     }
     // echo($product);
     echo("<script>console.log('Product:" . $product . "' );</script>");
@@ -139,6 +142,17 @@
                                         <div class="exzoom_img_box">
                                             <ul class='exzoom_img_ul'>
                                             <li><img src="<?php echo base_url('assets/').$product_det['img']; ?>"/></li>
+                                            <?php if($product==1){?>
+                                            <li><img src="<?php echo base_url('assets/');?>img/sub_products/sub_gen_screwed_2.png"/></li>
+                                            <?php } else if($product==2){?>
+                                            <li><img src="<?php echo base_url('assets/');?>img/sub_products/sub_gen_single_flange_2.png"/></li>
+                                            <li><img src="<?php echo base_url('assets/');?>img/sub_products/sub_gen_single_flange_3.png"/></li>
+                                            <?php } else if($product==3){?>
+                                            <li><img src="<?php echo base_url('assets/');?>img/sub_products/sub_gen_two_flange_2.png"/></li>
+                                            <?php } else if($product==4){?>
+                                                <li><img src="<?php echo base_url('assets/');?>img/sub_products/sub_gen_three_side_2.png"/></li>
+                                            <?php }?>
+                                            
                                             <!-- <li><img src="2.png"/></li>
                                             <li><img src="3.png"/></li>
                                             <li><img src="4.png"/></li>
@@ -154,16 +168,34 @@
                                             <a href="javascript:void(0);" class="exzoom_next_btn"> > </a>
                                         </p>
                                     </div>
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-md-2"></div>
+                                            <div class="col-md-4"  style="margin-top:3%;">
+                                                <button href="#" class="btn" data-toggle="modal" data-target="#popUpWindow">Enquire</button>
+                                            </div>
+                                            <div class="col-md-4"  style="margin-top:3%;">
+                                                <button href="#" class="btn" data-toggle="modal" data-target="#popUpWindow">Drawing</button>
+                                            </div>
+                                            <div class="col-md-2"></div>
+                                        </div>
+                                        
+                                    </div>
                                     <!-- <div class="img-magnifier-container">
                                         <img id="myimage" src="<?php //echo base_url('assets/').$product_det['img']; ?>" width="auto" height="50%" alt="<?php echo $product_det['name']; ?>">
                                     </div> -->
                                     <!-- <img src="<?php //echo base_url('assets/').$product_det['img']; ?>" alt="" class="img-fluid"> -->
                                 </div>
-                                <div class="col-md-8" style="height:45%">
+                                <div class="col-md-7" style="height:45%">
                                     <blockquote class="generic-blockquote" style="text-align: initial;"><h5><?php echo $product_det['desc'];?><h5></blockquote>
-                                        <div class="col-md-2" style="margim-top:5%;">
-                                            <button href="#" class="btn" data-toggle="modal" data-target="#popUpWindow">Enquire</button>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <img src="<?php echo base_url('assets/')?>img/table_images/gen3.png" style="width:inherit;">
                                         </div>
+                                        <!-- <div class="col-md-2" style="margim-top:5%;">
+                                            <button href="#" class="btn" data-toggle="modal" data-target="#popUpWindow">Enquire</button>
+                                        </div> -->
+                                    </div>
                                 </div>
                                 <div class="modal fade" id="popUpWindow">
                                     <div class="modal-dialog">
@@ -209,8 +241,8 @@
                                 
                             </div>
                         </div>
-                        <div class="section-top-border" style="padding:inherit;">
-                            <!-- <h3 class="mb-30">Table</h3> -->
+                        <!-- <div class="section-top-border" style="padding:inherit;">
+                            <h3 class="mb-30">Table</h3>
                             <div class="progress-table-wrap">
                                 <div class="progress-table">
                                     <div class="table-head">
@@ -332,41 +364,25 @@
                                         <div class="insidevisit" style="padding:0px;">                                            
                                             <div style="padding:0px;">
                                                 <div class="short-div3" style="padding-bottom:81px;padding-top:82px;border:0px;">Full</div>
-                                                <!-- <div class="short-div3" style="border-bottom: 1px solid #edf3fd;;padding-bottom:81px;padding-top:82px">Regular</div> -->
                                             </div>
-                                            <!-- <div class="short-div3">Full</div>                    
-                                            <div class="short-div3">Regular</div>
-                                            <div class="short-div3" style="border-bottom:0px;">Full</div> -->
                                         </div> 
                                         <div class="insidevisit" style="padding:0px;">
                                             <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">Screwed- BPS “II”</div>
                                             <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">Screwed-NPT</div>
                                             <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">Socketweld</div>
-                                            <div class="short-div2" style="border-bottom: 0px">SW with Pups</div>
-                                            <!-- <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">Screwed- BPS “II”</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">Screwed-NPT</div>
-                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">Socketweld</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">SW with Pups</div> -->                                                                                       
+                                            <div class="short-div2" style="border-bottom: 0px">SW with Pups</div>                                            
                                         </div>                                                                                
                                         <div class="insidevisit" style="padding:0px">
                                             <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">600</div>
                                             <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">600</div>
                                             <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">600</div>
                                             <div class="short-div2" style="border-bottom: 0px">600</div>
-                                            <!-- <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">800</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">800</div>
-                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">800</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">800</div>                                                                                         -->
                                         </div>
                                         <div class="insidevisit" style="padding:0px;padding-right:30px;">
                                             <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">BL-30-F-P-A3</div>
                                             <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">BL-30-F-N-A3</div>
                                             <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">BL-30-F-W-A3</div>
                                             <div class="short-div2" style="border-bottom: 0px">BL-30-F-WN-A3</div>
-                                            <!-- <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-P-A4</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-N-A4</div>
-                                            <div class="short-div4" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-W-A4</div>
-                                            <div class="short-div2" style="border-bottom: 1px solid #edf3fd;;">BL-3E-F-WN-A4</div>                                                                             -->
                                         </div>
                                     </div>
                                     <div class="table-row" style="padding-top:5px;padding-bottom:5px;">
@@ -452,9 +468,9 @@
 
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="section-top-border" style="margin-top:80px;">
+                        </div> -->
+                        <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6">
+                            <div class="section-top-border" style="margin-top:20px;">
                                 <!-- <h3 class="mb-30">Table</h3> -->
                                 <div class="progress-table-wrap">
                                     <div class="progress-table">                                    

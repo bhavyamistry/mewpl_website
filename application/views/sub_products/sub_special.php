@@ -45,6 +45,9 @@
         $product_det = array("name"=>"Uni-directional Flush Bottom Ball Valve (Type: Full Bore with oversized Flange)",
         "img"=>"img/sub_products/sub_sp_uni.png"
         );
+    }
+    else{
+        redirect(base_url().'Err404');
     }    
     // echo($product);
     // echo("<script>console.log('Product:" . $product . "' );</script>");
@@ -490,8 +493,8 @@
                                                 </div>
                                                 <div style="text-align:center;margin-left:15px;word-spacing:10px;" id="catalog_div1" class="content">
                                                     <div class="col-lg-12 col-md-12 col-sm-5 table-contents" style="display:inline-block;">
-                                                        <a href="<?php echo base_url('assets/').'product_pdf/Split_Body_Screwed_End.pdf';?>" style="display:inherit;">
-                                                            <div class="single-gallery-image" style="background: url(<?php echo base_url('assets/')?>/img/pdf_img/gen_screwed.jpg);width:250px;height:250px;displat:block;"></div>
+                                                        <a href="<?php echo base_url('assets/').'product_pdf/Jacketed_Ball_Valve.pdf';?>" style="display:inherit;">
+                                                            <div class="single-gallery-image" style="background: url(<?php echo base_url('assets/')?>/img/pdf_img/sp_jacketed.jpg);width:250px;height:250px;displat:block;"></div>
                                                         </a>
                                                         <h6>For Detailed Dimension, Please Download E-Catalog</h6>
                                                     </div>                                                    

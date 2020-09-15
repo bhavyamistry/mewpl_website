@@ -42,7 +42,7 @@
     <!-- Preloader Start -->
     <!-- slider Area Start-->
     <div class="slider-area ">
-        <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="<?php echo base_url('assets/'); ?>img/banner/contact_us.png" style="width:100%;background-size:cover;">
+        <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="<?php echo base_url('assets/'); ?>img/banner/inquiry.png" style="width:100%;background-size:cover;">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -407,7 +407,7 @@
                             {
                                 if(status == "success")
                                 {
-                                    // alert(data); 
+                                    alert(data); 
                                     if(data!="true")
                                     {
                                         // alert("Email Addres Not Valid");

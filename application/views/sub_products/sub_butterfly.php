@@ -54,6 +54,9 @@
         Butterfly valves are generally used in low pressure system application in Noncritical areas. They are normally used in large diameter lines. They have an extremely low pressure drop and are relatively light weight. Also, the face dimension is usually quite small. The diameter of the valve can be of the same order as the diameter of the connecting pipes.",
         );
     }
+    else{
+        redirect(base_url().'Err404');
+    }
     // echo($product);
     echo("<script>console.log('Product:" . $product . "' );</script>");
 ?>

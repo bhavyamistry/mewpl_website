@@ -83,7 +83,8 @@
 			print_r("<p>email:".$email."</p><br>");
 			print_r("<p>message:".$require."</p><br>");
 			print_r("<p>div_arr:"."</p><br>");
-			for($i=0;$i<count($div_arr);$i++)
+			$size = count($div_arr);
+			for($i=0;$i<$size;$i++)
 			{
 				if($div_arr[$i]!="")
 				{
@@ -100,21 +101,20 @@
 			// ini_set("SMTP","ssl:smtp.gmail.com" );
 			// ini_set("smtp_port","465");
 			// ini_set('sendmail_from', 'bhavya.mevada13@gmail.com');  
-			$to = "bhavya.mstry@gmail.com";
-			$from = $this->input->post('email');
+			$to = "bhavya.mevada13@gmail.com";
+			$from = "saturnva@saturnvalves.com";
 			$name = $this->input->post('name');;
 			$subject = "Enquiry From Website";				
-			$cmessage = "Name : ".$name." \n"."Company Name : ".$bname." \n"."Phone Number : ".$num." \n".$pro_string."Requirements : ".$require." \n"."Date of Enquiry Sent:".date("d-m-Y");
+			$cmessage = "Name : ".$name."<br>Email : ".$email."<br>Company Name : ".$bname."<br>Phone Number : ".$num."<br>".$pro_string."<br>Requirements : ".$require."<br>Date of Enquiry Sent:".date("d-m-Y");
 			// $cmessage = $cmessage.'From :'.$_REQUEST['num'];
-			print_r($cmessage);
-			$headers = "From: $from";
-			$headers = "From: " . $from . "\r\n";
-			$headers .= "Reply-To: ". $from . "\r\n";
-			$headers .= "MIME-Version: 1.0\r\n";
-			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+			// print_r($cmessage);
+			$headers = "From: " . $from . "<br>";
+			$headers .= "Reply-To: ". $from . "<br>";
+			$headers .= "MIME-Version: 1.0<br>";
+			$headers .= "Content-Type: text/html; charset=ISO-8859-1<br>";
+			// print_r($headers);
 			// mail($to, $subject, $cmessage, $headers);
-			
-			// redirect(base_url().'Home');
+			redirect(base_url().'Thankyou?send=1');
 		}
 
 	}

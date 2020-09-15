@@ -57,6 +57,9 @@
         $product_det = array("name"=>"Forged: Lift Check Valve",
         "img"=>"img/sub_products/sub_chk_8.jpg"
         );
+    }
+    else{
+        redirect(base_url().'Err404');
     }    
     // echo($product);
     // echo("<script>console.log('Product:" . $product . "' );</script>");
